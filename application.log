@@ -1,26 +1,1100 @@
-2020-03-07 00:01:16.577  INFO [servicio-zuul-server,,,] 17628 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2020-03-07 00:06:16.583  INFO [servicio-zuul-server,,,] 17628 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2020-03-07 00:11:16.584  INFO [servicio-zuul-server,,,] 17628 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2020-03-07 00:16:16.586  INFO [servicio-zuul-server,,,] 17628 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2020-03-07 00:21:16.588  INFO [servicio-zuul-server,,,] 17628 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2020-03-07 00:26:16.590  INFO [servicio-zuul-server,,,] 17628 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2020-03-07 00:31:16.591  INFO [servicio-zuul-server,,,] 17628 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2020-03-07 00:36:16.592  INFO [servicio-zuul-server,,,] 17628 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2020-03-07 00:41:16.594  INFO [servicio-zuul-server,,,] 17628 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2020-03-07 00:46:16.595  INFO [servicio-zuul-server,,,] 17628 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2020-03-07 00:51:16.596  INFO [servicio-zuul-server,,,] 17628 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2020-03-07 00:56:16.597  INFO [servicio-zuul-server,,,] 17628 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2020-03-07 01:01:16.598  INFO [servicio-zuul-server,,,] 17628 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2020-03-07 01:06:16.599  INFO [servicio-zuul-server,,,] 17628 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2020-03-07 01:11:16.613  INFO [servicio-zuul-server,,,] 17628 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2020-03-07 01:16:16.614  INFO [servicio-zuul-server,,,] 17628 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2020-03-07 01:19:09.442  INFO [servicio-zuul-server,,,] 17628 --- [RMI TCP Connection(165)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
-2020-03-07 01:19:09.457  INFO [servicio-zuul-server,,,] 17628 --- [RMI TCP Connection(165)-127.0.0.1] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application SERVICIO-ZUUL-SERVER with eureka with status DOWN
-2020-03-07 01:19:09.457  WARN [servicio-zuul-server,,,] 17628 --- [RMI TCP Connection(165)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1583554749457, current=DOWN, previous=UP]
-2020-03-07 01:19:09.457  INFO [servicio-zuul-server,,,] 17628 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_SERVICIO-ZUUL-SERVER/DESKTOP-9CSVTN3.mshome.net:servicio-zuul-server:8090: registering service...
-2020-03-07 01:19:09.477  INFO [servicio-zuul-server,,,] 17628 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_SERVICIO-ZUUL-SERVER/DESKTOP-9CSVTN3.mshome.net:servicio-zuul-server:8090 - registration status: 204
-2020-03-07 01:19:09.489  INFO [servicio-zuul-server,,,] 17628 --- [RMI TCP Connection(165)-127.0.0.1] o.s.c.n.zuul.ZuulFilterInitializer       : Stopping filter initializer
-2020-03-07 01:19:09.494  INFO [servicio-zuul-server,,,] 17628 --- [RMI TCP Connection(165)-127.0.0.1] c.n.u.concurrent.ShutdownEnabledTimer    : Shutdown hook removed for: NFLoadBalancer-PingTimer-servicio-oauth
-2020-03-07 01:19:09.500  INFO [servicio-zuul-server,,,] 17628 --- [RMI TCP Connection(165)-127.0.0.1] c.n.u.concurrent.ShutdownEnabledTimer    : Shutdown hook removed for: NFLoadBalancer-PingTimer-servicio-productos
-2020-03-07 01:19:09.502  INFO [servicio-zuul-server,,,] 17628 --- [RMI TCP Connection(165)-127.0.0.1] c.n.u.concurrent.ShutdownEnabledTimer    : Shutdown hook removed for: NFLoadBalancer-PingTimer-servicio-items
-2020-03-07 01:19:09.508  INFO [servicio-zuul-server,,,] 17628 --- [RMI TCP Connection(165)-127.0.0.1] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-03-19 22:20:02.633  INFO [servicio-zuul-server,,,] 15752 --- [restartedMain] c.c.c.ConfigServicePropertySourceLocator : Fetching config from server at : http://localhost:8888
+2020-03-19 22:20:03.647  INFO [servicio-zuul-server,,,] 15752 --- [restartedMain] c.c.c.ConfigServicePropertySourceLocator : Located environment: name=servicio-zuul-server, profiles=[default], label=null, version=93a20adb152c79ab23b02aa582410a46758b43d4, state=null
+2020-03-19 22:20:03.648  INFO [servicio-zuul-server,,,] 15752 --- [restartedMain] b.c.PropertySourceBootstrapConfiguration : Located property source: CompositePropertySource {name='configService', propertySources=[MapPropertySource {name='configClient'}, MapPropertySource {name='https://github.com/CamiloLalanne/config-files.git/application.properties'}]}
+2020-03-19 22:20:03.673  INFO [servicio-zuul-server,,,] 15752 --- [restartedMain] .SpringbootServicioZuulServerApplication : The following profiles are active: dev
+2020-03-19 22:20:04.824  WARN [servicio-zuul-server,,,] 15752 --- [restartedMain] o.s.boot.actuate.endpoint.EndpointId     : Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+2020-03-19 22:20:04.879  WARN [servicio-zuul-server,,,] 15752 --- [restartedMain] o.s.boot.actuate.endpoint.EndpointId     : Endpoint ID 'hystrix.stream' contains invalid characters, please migrate to a valid format.
+2020-03-19 22:20:05.116  INFO [servicio-zuul-server,,,] 15752 --- [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=1ed9086b-83e8-3e0f-b51a-a0aaee05a12f
+2020-03-19 22:20:05.395  INFO [servicio-zuul-server,,,] 15752 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$406be5d7] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-19 22:20:05.402  INFO [servicio-zuul-server,,,] 15752 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.sleuth.instrument.web.client.TraceWebClientAutoConfiguration$TraceOAuthConfiguration' of type [org.springframework.cloud.sleuth.instrument.web.client.TraceWebClientAutoConfiguration$TraceOAuthConfiguration$$EnhancerBySpringCGLIB$$694e7539] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-19 22:20:05.865  INFO [servicio-zuul-server,,,] 15752 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8090 (http)
+2020-03-19 22:20:05.881  INFO [servicio-zuul-server,,,] 15752 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-03-19 22:20:05.882  INFO [servicio-zuul-server,,,] 15752 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.19]
+2020-03-19 22:20:05.982  INFO [servicio-zuul-server,,,] 15752 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-03-19 22:20:05.983  INFO [servicio-zuul-server,,,] 15752 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2298 ms
+2020-03-19 22:20:06.132  WARN [servicio-zuul-server,,,] 15752 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2020-03-19 22:20:06.133  INFO [servicio-zuul-server,,,] 15752 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-03-19 22:20:06.140  INFO [servicio-zuul-server,,,] 15752 --- [restartedMain] c.netflix.config.DynamicPropertyFactory  : DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@3a84b7af
+2020-03-19 22:20:08.973  INFO [servicio-zuul-server,,,] 15752 --- [restartedMain] o.s.b.a.e.web.ServletEndpointRegistrar   : Registered '/actuator/hystrix.stream' to hystrix.stream-actuator-endpoint
+2020-03-19 22:20:09.402  INFO [servicio-zuul-server,,,] 15752 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 23 endpoint(s) beneath base path '/actuator'
+2020-03-19 22:20:09.571  WARN [servicio-zuul-server,,,] 15752 --- [restartedMain] o.s.s.o.p.t.s.JwtAccessTokenConverter    : Unable to create an RSA verifier from verifierKey (ignoreable if using MAC)
+2020-03-19 22:20:09.633  INFO [servicio-zuul-server,,,] 15752 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2020-03-19 22:20:09.670  WARN [servicio-zuul-server,,,] 15752 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2020-03-19 22:20:09.670  INFO [servicio-zuul-server,,,] 15752 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-03-19 22:20:09.917  INFO [servicio-zuul-server,,,] 15752 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-03-19 22:20:10.005  WARN [servicio-zuul-server,,,] 15752 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2020-03-19 22:20:10.405  INFO [servicio-zuul-server,,,] 15752 --- [restartedMain] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 5b35298d-774e-4a8a-b0b0-f342ef4b433a
+
+2020-03-19 22:20:10.611  INFO [servicio-zuul-server,,,] 15752 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@17c80631, org.springframework.security.web.context.SecurityContextPersistenceFilter@6cf770c4, org.springframework.security.web.header.HeaderWriterFilter@3d779838, org.springframework.web.filter.CorsFilter@45774d6b, org.springframework.security.web.authentication.logout.LogoutFilter@2e5a3593, org.springframework.security.oauth2.provider.authentication.OAuth2AuthenticationProcessingFilter@137e1187, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3da40f2d, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@187ac638, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@43e26bd9, org.springframework.security.web.session.SessionManagementFilter@54df95f3, org.springframework.security.web.access.ExceptionTranslationFilter@7c8b88da, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@494016b2]
+2020-03-19 22:20:11.738  INFO [servicio-zuul-server,,,] 15752 --- [restartedMain] o.s.c.n.zuul.ZuulFilterInitializer       : Starting filter initializer
+2020-03-19 22:20:11.882  INFO [servicio-zuul-server,,,] 15752 --- [restartedMain] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2020-03-19 22:20:11.907  INFO [servicio-zuul-server,,,] 15752 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2020-03-19 22:20:11.943  INFO [servicio-zuul-server,,,] 15752 --- [restartedMain] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+2020-03-19 22:20:11.943  INFO [servicio-zuul-server,,,] 15752 --- [restartedMain] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+2020-03-19 22:20:12.030  INFO [servicio-zuul-server,,,] 15752 --- [restartedMain] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+2020-03-19 22:20:12.030  INFO [servicio-zuul-server,,,] 15752 --- [restartedMain] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+2020-03-19 22:20:12.207  INFO [servicio-zuul-server,,,] 15752 --- [restartedMain] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-03-19 22:20:12.500  INFO [servicio-zuul-server,,,] 15752 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2020-03-19 22:20:12.500  INFO [servicio-zuul-server,,,] 15752 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2020-03-19 22:20:12.500  INFO [servicio-zuul-server,,,] 15752 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2020-03-19 22:20:12.500  INFO [servicio-zuul-server,,,] 15752 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2020-03-19 22:20:12.501  INFO [servicio-zuul-server,,,] 15752 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2020-03-19 22:20:12.501  INFO [servicio-zuul-server,,,] 15752 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2020-03-19 22:20:12.501  INFO [servicio-zuul-server,,,] 15752 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2020-03-19 22:20:12.634  INFO [servicio-zuul-server,,,] 15752 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2020-03-19 22:20:12.636  INFO [servicio-zuul-server,,,] 15752 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2020-03-19 22:20:12.639  INFO [servicio-zuul-server,,,] 15752 --- [restartedMain] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2020-03-19 22:20:12.903  INFO [servicio-zuul-server,,,] 15752 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1584667212641 with initial instances count: 4
+2020-03-19 22:20:12.915  INFO [servicio-zuul-server,,,] 15752 --- [restartedMain] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application SERVICIO-ZUUL-SERVER with eureka with status UP
+2020-03-19 22:20:12.916  INFO [servicio-zuul-server,,,] 15752 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1584667212916, current=UP, previous=STARTING]
+2020-03-19 22:20:12.918  INFO [servicio-zuul-server,,,] 15752 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_SERVICIO-ZUUL-SERVER/DESKTOP-9CSVTN3.mshome.net:servicio-zuul-server:8090: registering service...
+2020-03-19 22:20:12.921  INFO [servicio-zuul-server,,,] 15752 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2020-03-19 22:20:12.944  INFO [servicio-zuul-server,,,] 15752 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2020-03-19 22:20:12.967  INFO [servicio-zuul-server,,,] 15752 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_SERVICIO-ZUUL-SERVER/DESKTOP-9CSVTN3.mshome.net:servicio-zuul-server:8090 - registration status: 204
+2020-03-19 22:20:12.988  INFO [servicio-zuul-server,,,] 15752 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2020-03-19 22:20:13.108  INFO [servicio-zuul-server,,,] 15752 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_1
+2020-03-19 22:20:13.110  INFO [servicio-zuul-server,,,] 15752 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_2
+2020-03-19 22:20:13.111  INFO [servicio-zuul-server,,,] 15752 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_3
+2020-03-19 22:20:13.116  INFO [servicio-zuul-server,,,] 15752 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_4
+2020-03-19 22:20:13.118  INFO [servicio-zuul-server,,,] 15752 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingDELETE_1
+2020-03-19 22:20:13.120  INFO [servicio-zuul-server,,,] 15752 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_5
+2020-03-19 22:20:13.123  INFO [servicio-zuul-server,,,] 15752 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_6
+2020-03-19 22:20:13.125  INFO [servicio-zuul-server,,,] 15752 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_7
+2020-03-19 22:20:13.127  INFO [servicio-zuul-server,,,] 15752 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_8
+2020-03-19 22:20:13.131  INFO [servicio-zuul-server,,,] 15752 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingDELETE_2
+2020-03-19 22:20:13.133  INFO [servicio-zuul-server,,,] 15752 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_9
+2020-03-19 22:20:13.135  INFO [servicio-zuul-server,,,] 15752 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_10
+2020-03-19 22:20:13.136  INFO [servicio-zuul-server,,,] 15752 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_11
+2020-03-19 22:20:13.138  INFO [servicio-zuul-server,,,] 15752 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_12
+2020-03-19 22:20:13.140  INFO [servicio-zuul-server,,,] 15752 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_13
+2020-03-19 22:20:13.141  INFO [servicio-zuul-server,,,] 15752 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_14
+2020-03-19 22:20:13.142  INFO [servicio-zuul-server,,,] 15752 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_15
+2020-03-19 22:20:13.144  INFO [servicio-zuul-server,,,] 15752 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_16
+2020-03-19 22:20:13.145  INFO [servicio-zuul-server,,,] 15752 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_17
+2020-03-19 22:20:13.148  INFO [servicio-zuul-server,,,] 15752 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingPOST_1
+2020-03-19 22:20:13.150  INFO [servicio-zuul-server,,,] 15752 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_18
+2020-03-19 22:20:13.151  INFO [servicio-zuul-server,,,] 15752 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_19
+2020-03-19 22:20:13.152  INFO [servicio-zuul-server,,,] 15752 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_20
+2020-03-19 22:20:13.154  INFO [servicio-zuul-server,,,] 15752 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_21
+2020-03-19 22:20:13.156  INFO [servicio-zuul-server,,,] 15752 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_22
+2020-03-19 22:20:13.158  INFO [servicio-zuul-server,,,] 15752 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingPOST_2
+2020-03-19 22:20:13.160  INFO [servicio-zuul-server,,,] 15752 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_23
+2020-03-19 22:20:13.162  INFO [servicio-zuul-server,,,] 15752 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_24
+2020-03-19 22:20:13.164  INFO [servicio-zuul-server,,,] 15752 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingPOST_3
+2020-03-19 22:20:13.165  INFO [servicio-zuul-server,,,] 15752 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_25
+2020-03-19 22:20:13.167  INFO [servicio-zuul-server,,,] 15752 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_26
+2020-03-19 22:20:13.168  INFO [servicio-zuul-server,,,] 15752 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingPOST_4
+2020-03-19 22:20:13.170  INFO [servicio-zuul-server,,,] 15752 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_27
+2020-03-19 22:20:13.236  INFO [servicio-zuul-server,,,] 15752 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8090 (http) with context path ''
+2020-03-19 22:20:13.237  INFO [servicio-zuul-server,,,] 15752 --- [restartedMain] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8090
+2020-03-19 22:20:13.239  INFO [servicio-zuul-server,,,] 15752 --- [restartedMain] .SpringbootServicioZuulServerApplication : Started SpringbootServicioZuulServerApplication in 11.967 seconds (JVM running for 12.809)
+2020-03-19 22:22:31.854  INFO [servicio-zuul-server,,,] 15752 --- [http-nio-8090-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-03-19 22:22:31.854  INFO [servicio-zuul-server,,,] 15752 --- [http-nio-8090-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-03-19 22:22:31.871  INFO [servicio-zuul-server,,,] 15752 --- [http-nio-8090-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 17 ms
+2020-03-19 22:22:31.915  INFO [servicio-zuul-server,b22ec6fa650722ca,b22ec6fa650722ca,true] 15752 --- [http-nio-8090-exec-2] c.f.s.a.z.f.PreTiempoTranscurridoFilter  : POST request enrutado a http://localhost:8090/api/security/oauth/token
+2020-03-19 22:22:32.054  INFO [servicio-zuul-server,b22ec6fa650722ca,b22ec6fa650722ca,true] 15752 --- [http-nio-8090-exec-2] c.netflix.config.ChainedDynamicProperty  : Flipping property: servicio-oauth.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+2020-03-19 22:22:32.066  INFO [servicio-zuul-server,b22ec6fa650722ca,b22ec6fa650722ca,true] 15752 --- [http-nio-8090-exec-2] c.n.u.concurrent.ShutdownEnabledTimer    : Shutdown hook installed for: NFLoadBalancer-PingTimer-servicio-oauth
+2020-03-19 22:22:32.066  INFO [servicio-zuul-server,b22ec6fa650722ca,b22ec6fa650722ca,true] 15752 --- [http-nio-8090-exec-2] c.netflix.loadbalancer.BaseLoadBalancer  : Client: servicio-oauth instantiated a LoadBalancer: DynamicServerListLoadBalancer:{NFLoadBalancer:name=servicio-oauth,current list of Servers=[],Load balancer stats=Zone stats: {},Server stats: []}ServerList:null
+2020-03-19 22:22:32.072  INFO [servicio-zuul-server,b22ec6fa650722ca,b22ec6fa650722ca,true] 15752 --- [http-nio-8090-exec-2] c.n.l.DynamicServerListLoadBalancer      : Using serverListUpdater PollingServerListUpdater
+2020-03-19 22:22:32.083  INFO [servicio-zuul-server,b22ec6fa650722ca,b22ec6fa650722ca,true] 15752 --- [http-nio-8090-exec-2] c.netflix.config.ChainedDynamicProperty  : Flipping property: servicio-oauth.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+2020-03-19 22:22:32.085  INFO [servicio-zuul-server,b22ec6fa650722ca,b22ec6fa650722ca,true] 15752 --- [http-nio-8090-exec-2] c.n.l.DynamicServerListLoadBalancer      : DynamicServerListLoadBalancer for client servicio-oauth initialized: DynamicServerListLoadBalancer:{NFLoadBalancer:name=servicio-oauth,current list of Servers=[DESKTOP-9CSVTN3.mshome.net:9101],Load balancer stats=Zone stats: {defaultzone=[Zone:defaultzone;	Instance count:1;	Active connections count: 0;	Circuit breaker tripped count: 0;	Active connections per server: 0.0;]
+},Server stats: [[Server:DESKTOP-9CSVTN3.mshome.net:9101;	Zone:defaultZone;	Total Requests:0;	Successive connection failure:0;	Total blackout seconds:0;	Last connection made:Wed Dec 31 21:00:00 CLST 1969;	First connection made: Wed Dec 31 21:00:00 CLST 1969;	Active Connections:0;	total failure count in last (1000) msecs:0;	average resp time:0.0;	90 percentile resp time:0.0;	95 percentile resp time:0.0;	min resp time:0.0;	max resp time:0.0;	stddev resp time:0.0]
+]}ServerList:org.springframework.cloud.netflix.ribbon.eureka.DomainExtractingServerList@8481dc3
+2020-03-19 22:22:32.109  WARN [servicio-zuul-server,b22ec6fa650722ca,b22ec6fa650722ca,true] 15752 --- [http-nio-8090-exec-2] o.s.c.n.z.f.r.s.AbstractRibbonCommand    : The Hystrix timeout of 20000ms for the command servicio-oauth is set lower than the combination of the Ribbon read and connect timeout, 26000ms.
+2020-03-19 22:22:33.076  INFO [servicio-zuul-server,,,] 15752 --- [PollingServerListUpdater-0] c.netflix.config.ChainedDynamicProperty  : Flipping property: servicio-oauth.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+2020-03-19 22:22:33.497  INFO [servicio-zuul-server,b22ec6fa650722ca,b22ec6fa650722ca,true] 15752 --- [http-nio-8090-exec-2] c.f.s.a.z.f.PostTiempoTranscurridoFilter : Entrando a post filter
+2020-03-19 22:22:33.497  INFO [servicio-zuul-server,b22ec6fa650722ca,b22ec6fa650722ca,true] 15752 --- [http-nio-8090-exec-2] c.f.s.a.z.f.PostTiempoTranscurridoFilter : Tiempo transcurrido en segundos 1.582 seg.
+2020-03-19 22:22:33.498  INFO [servicio-zuul-server,b22ec6fa650722ca,b22ec6fa650722ca,true] 15752 --- [http-nio-8090-exec-2] c.f.s.a.z.f.PostTiempoTranscurridoFilter : Tiempo transcurrido en mileseg 1582 ms.
+2020-03-19 22:25:12.505  INFO [servicio-zuul-server,,,] 15752 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-03-19 22:30:12.507  INFO [servicio-zuul-server,,,] 15752 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-03-19 22:35:12.508  INFO [servicio-zuul-server,,,] 15752 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-03-19 22:40:12.510  INFO [servicio-zuul-server,,,] 15752 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-03-19 22:42:07.203  INFO [servicio-zuul-server,e5b8fbc717c24e37,e5b8fbc717c24e37,true] 15752 --- [http-nio-8090-exec-4] c.f.s.a.z.f.PreTiempoTranscurridoFilter  : POST request enrutado a http://localhost:8090/api/security/oauth/token
+2020-03-19 22:42:07.204  WARN [servicio-zuul-server,e5b8fbc717c24e37,e5b8fbc717c24e37,true] 15752 --- [http-nio-8090-exec-4] o.s.c.n.z.f.r.s.AbstractRibbonCommand    : The Hystrix timeout of 20000ms for the command servicio-oauth is set lower than the combination of the Ribbon read and connect timeout, 26000ms.
+2020-03-19 22:42:07.229  INFO [servicio-zuul-server,e5b8fbc717c24e37,e5b8fbc717c24e37,true] 15752 --- [http-nio-8090-exec-4] c.f.s.a.z.f.PostTiempoTranscurridoFilter : Entrando a post filter
+2020-03-19 22:42:07.229  INFO [servicio-zuul-server,e5b8fbc717c24e37,e5b8fbc717c24e37,true] 15752 --- [http-nio-8090-exec-4] c.f.s.a.z.f.PostTiempoTranscurridoFilter : Tiempo transcurrido en segundos 0.026 seg.
+2020-03-19 22:42:07.229  INFO [servicio-zuul-server,e5b8fbc717c24e37,e5b8fbc717c24e37,true] 15752 --- [http-nio-8090-exec-4] c.f.s.a.z.f.PostTiempoTranscurridoFilter : Tiempo transcurrido en mileseg 26 ms.
+2020-03-19 22:45:12.512  INFO [servicio-zuul-server,,,] 15752 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-03-19 22:50:12.513  INFO [servicio-zuul-server,,,] 15752 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-03-19 22:51:52.330  INFO [servicio-zuul-server,2f57c3d958363e73,2f57c3d958363e73,true] 15752 --- [http-nio-8090-exec-6] c.f.s.a.z.f.PreTiempoTranscurridoFilter  : POST request enrutado a http://localhost:8090/api/security/oauth/token
+2020-03-19 22:51:52.331  WARN [servicio-zuul-server,2f57c3d958363e73,2f57c3d958363e73,true] 15752 --- [http-nio-8090-exec-6] o.s.c.n.z.f.r.s.AbstractRibbonCommand    : The Hystrix timeout of 20000ms for the command servicio-oauth is set lower than the combination of the Ribbon read and connect timeout, 26000ms.
+2020-03-19 22:51:52.516  INFO [servicio-zuul-server,2f57c3d958363e73,2f57c3d958363e73,true] 15752 --- [http-nio-8090-exec-6] c.f.s.a.z.f.PostTiempoTranscurridoFilter : Entrando a post filter
+2020-03-19 22:51:52.516  INFO [servicio-zuul-server,2f57c3d958363e73,2f57c3d958363e73,true] 15752 --- [http-nio-8090-exec-6] c.f.s.a.z.f.PostTiempoTranscurridoFilter : Tiempo transcurrido en segundos 0.186 seg.
+2020-03-19 22:51:52.516  INFO [servicio-zuul-server,2f57c3d958363e73,2f57c3d958363e73,true] 15752 --- [http-nio-8090-exec-6] c.f.s.a.z.f.PostTiempoTranscurridoFilter : Tiempo transcurrido en mileseg 186 ms.
+2020-03-19 22:52:59.529  INFO [servicio-zuul-server,88226af3b229f489,88226af3b229f489,true] 15752 --- [http-nio-8090-exec-8] c.f.s.a.z.f.PreTiempoTranscurridoFilter  : POST request enrutado a http://localhost:8090/api/security/oauth/token
+2020-03-19 22:52:59.530  WARN [servicio-zuul-server,88226af3b229f489,88226af3b229f489,true] 15752 --- [http-nio-8090-exec-8] o.s.c.n.z.f.r.s.AbstractRibbonCommand    : The Hystrix timeout of 20000ms for the command servicio-oauth is set lower than the combination of the Ribbon read and connect timeout, 26000ms.
+2020-03-19 22:52:59.715  INFO [servicio-zuul-server,88226af3b229f489,88226af3b229f489,true] 15752 --- [http-nio-8090-exec-8] c.f.s.a.z.f.PostTiempoTranscurridoFilter : Entrando a post filter
+2020-03-19 22:52:59.716  INFO [servicio-zuul-server,88226af3b229f489,88226af3b229f489,true] 15752 --- [http-nio-8090-exec-8] c.f.s.a.z.f.PostTiempoTranscurridoFilter : Tiempo transcurrido en segundos 0.187 seg.
+2020-03-19 22:52:59.716  INFO [servicio-zuul-server,88226af3b229f489,88226af3b229f489,true] 15752 --- [http-nio-8090-exec-8] c.f.s.a.z.f.PostTiempoTranscurridoFilter : Tiempo transcurrido en mileseg 187 ms.
+2020-03-19 22:55:12.515  INFO [servicio-zuul-server,,,] 15752 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-03-19 23:00:12.516  INFO [servicio-zuul-server,,,] 15752 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-03-19 23:05:12.518  INFO [servicio-zuul-server,,,] 15752 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-03-19 23:10:12.521  INFO [servicio-zuul-server,,,] 15752 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-03-19 23:15:12.523  INFO [servicio-zuul-server,,,] 15752 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-03-19 23:19:48.432  INFO [servicio-zuul-server,328caf62d6eb7b4b,328caf62d6eb7b4b,true] 15752 --- [http-nio-8090-exec-3] c.f.s.a.z.f.PreTiempoTranscurridoFilter  : POST request enrutado a http://localhost:8090/api/items/jwtp
+2020-03-19 23:19:48.469  INFO [servicio-zuul-server,328caf62d6eb7b4b,328caf62d6eb7b4b,true] 15752 --- [http-nio-8090-exec-3] c.netflix.config.ChainedDynamicProperty  : Flipping property: servicio-items.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+2020-03-19 23:19:48.471  INFO [servicio-zuul-server,328caf62d6eb7b4b,328caf62d6eb7b4b,true] 15752 --- [http-nio-8090-exec-3] c.n.u.concurrent.ShutdownEnabledTimer    : Shutdown hook installed for: NFLoadBalancer-PingTimer-servicio-items
+2020-03-19 23:19:48.471  INFO [servicio-zuul-server,328caf62d6eb7b4b,328caf62d6eb7b4b,true] 15752 --- [http-nio-8090-exec-3] c.netflix.loadbalancer.BaseLoadBalancer  : Client: servicio-items instantiated a LoadBalancer: DynamicServerListLoadBalancer:{NFLoadBalancer:name=servicio-items,current list of Servers=[],Load balancer stats=Zone stats: {},Server stats: []}ServerList:null
+2020-03-19 23:19:48.473  INFO [servicio-zuul-server,328caf62d6eb7b4b,328caf62d6eb7b4b,true] 15752 --- [http-nio-8090-exec-3] c.n.l.DynamicServerListLoadBalancer      : Using serverListUpdater PollingServerListUpdater
+2020-03-19 23:19:48.474  INFO [servicio-zuul-server,328caf62d6eb7b4b,328caf62d6eb7b4b,true] 15752 --- [http-nio-8090-exec-3] c.netflix.config.ChainedDynamicProperty  : Flipping property: servicio-items.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+2020-03-19 23:19:48.475  INFO [servicio-zuul-server,328caf62d6eb7b4b,328caf62d6eb7b4b,true] 15752 --- [http-nio-8090-exec-3] c.n.l.DynamicServerListLoadBalancer      : DynamicServerListLoadBalancer for client servicio-items initialized: DynamicServerListLoadBalancer:{NFLoadBalancer:name=servicio-items,current list of Servers=[DESKTOP-9CSVTN3.mshome.net:8005],Load balancer stats=Zone stats: {defaultzone=[Zone:defaultzone;	Instance count:1;	Active connections count: 0;	Circuit breaker tripped count: 0;	Active connections per server: 0.0;]
+},Server stats: [[Server:DESKTOP-9CSVTN3.mshome.net:8005;	Zone:defaultZone;	Total Requests:0;	Successive connection failure:0;	Total blackout seconds:0;	Last connection made:Wed Dec 31 21:00:00 CLST 1969;	First connection made: Wed Dec 31 21:00:00 CLST 1969;	Active Connections:0;	total failure count in last (1000) msecs:0;	average resp time:0.0;	90 percentile resp time:0.0;	95 percentile resp time:0.0;	min resp time:0.0;	max resp time:0.0;	stddev resp time:0.0]
+]}ServerList:org.springframework.cloud.netflix.ribbon.eureka.DomainExtractingServerList@6b95be45
+2020-03-19 23:19:48.480  WARN [servicio-zuul-server,328caf62d6eb7b4b,328caf62d6eb7b4b,true] 15752 --- [http-nio-8090-exec-3] o.s.c.n.z.f.r.s.AbstractRibbonCommand    : The Hystrix timeout of 20000ms for the command servicio-items is set lower than the combination of the Ribbon read and connect timeout, 26000ms.
+2020-03-19 23:19:48.550  INFO [servicio-zuul-server,328caf62d6eb7b4b,1d6485fb61f17786,true] 15752 --- [http-nio-8090-exec-4] c.f.s.a.z.f.PreTiempoTranscurridoFilter  : POST request enrutado a http://DESKTOP-9CSVTN3.mshome.net:8090/api/security/oauth/token
+2020-03-19 23:19:48.551  WARN [servicio-zuul-server,328caf62d6eb7b4b,1d6485fb61f17786,true] 15752 --- [http-nio-8090-exec-4] o.s.c.n.z.f.r.s.AbstractRibbonCommand    : The Hystrix timeout of 20000ms for the command servicio-oauth is set lower than the combination of the Ribbon read and connect timeout, 26000ms.
+2020-03-19 23:19:48.735  INFO [servicio-zuul-server,328caf62d6eb7b4b,1d6485fb61f17786,true] 15752 --- [http-nio-8090-exec-4] c.f.s.a.z.f.PostTiempoTranscurridoFilter : Entrando a post filter
+2020-03-19 23:19:48.735  INFO [servicio-zuul-server,328caf62d6eb7b4b,1d6485fb61f17786,true] 15752 --- [http-nio-8090-exec-4] c.f.s.a.z.f.PostTiempoTranscurridoFilter : Tiempo transcurrido en segundos 0.185 seg.
+2020-03-19 23:19:48.735  INFO [servicio-zuul-server,328caf62d6eb7b4b,1d6485fb61f17786,true] 15752 --- [http-nio-8090-exec-4] c.f.s.a.z.f.PostTiempoTranscurridoFilter : Tiempo transcurrido en mileseg 185 ms.
+2020-03-19 23:19:48.843  INFO [servicio-zuul-server,328caf62d6eb7b4b,328caf62d6eb7b4b,true] 15752 --- [http-nio-8090-exec-3] c.f.s.a.z.f.PostTiempoTranscurridoFilter : Entrando a post filter
+2020-03-19 23:19:48.843  INFO [servicio-zuul-server,328caf62d6eb7b4b,328caf62d6eb7b4b,true] 15752 --- [http-nio-8090-exec-3] c.f.s.a.z.f.PostTiempoTranscurridoFilter : Tiempo transcurrido en segundos 0.411 seg.
+2020-03-19 23:19:48.843  INFO [servicio-zuul-server,328caf62d6eb7b4b,328caf62d6eb7b4b,true] 15752 --- [http-nio-8090-exec-3] c.f.s.a.z.f.PostTiempoTranscurridoFilter : Tiempo transcurrido en mileseg 411 ms.
+2020-03-19 23:19:49.474  INFO [servicio-zuul-server,,,] 15752 --- [PollingServerListUpdater-0] c.netflix.config.ChainedDynamicProperty  : Flipping property: servicio-items.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+2020-03-19 23:19:52.953  INFO [servicio-zuul-server,665d3129ad9735e9,665d3129ad9735e9,true] 15752 --- [http-nio-8090-exec-6] c.f.s.a.z.f.PreTiempoTranscurridoFilter  : POST request enrutado a http://localhost:8090/api/items/jwtp
+2020-03-19 23:19:52.954  WARN [servicio-zuul-server,665d3129ad9735e9,665d3129ad9735e9,true] 15752 --- [http-nio-8090-exec-6] o.s.c.n.z.f.r.s.AbstractRibbonCommand    : The Hystrix timeout of 20000ms for the command servicio-items is set lower than the combination of the Ribbon read and connect timeout, 26000ms.
+2020-03-19 23:19:52.964  INFO [servicio-zuul-server,665d3129ad9735e9,21bc792a6ffc96de,true] 15752 --- [http-nio-8090-exec-7] c.f.s.a.z.f.PreTiempoTranscurridoFilter  : POST request enrutado a http://DESKTOP-9CSVTN3.mshome.net:8090/api/security/oauth/token
+2020-03-19 23:19:52.965  WARN [servicio-zuul-server,665d3129ad9735e9,21bc792a6ffc96de,true] 15752 --- [http-nio-8090-exec-7] o.s.c.n.z.f.r.s.AbstractRibbonCommand    : The Hystrix timeout of 20000ms for the command servicio-oauth is set lower than the combination of the Ribbon read and connect timeout, 26000ms.
+2020-03-19 23:19:53.143  INFO [servicio-zuul-server,665d3129ad9735e9,21bc792a6ffc96de,true] 15752 --- [http-nio-8090-exec-7] c.f.s.a.z.f.PostTiempoTranscurridoFilter : Entrando a post filter
+2020-03-19 23:19:53.143  INFO [servicio-zuul-server,665d3129ad9735e9,21bc792a6ffc96de,true] 15752 --- [http-nio-8090-exec-7] c.f.s.a.z.f.PostTiempoTranscurridoFilter : Tiempo transcurrido en segundos 0.178 seg.
+2020-03-19 23:19:53.143  INFO [servicio-zuul-server,665d3129ad9735e9,21bc792a6ffc96de,true] 15752 --- [http-nio-8090-exec-7] c.f.s.a.z.f.PostTiempoTranscurridoFilter : Tiempo transcurrido en mileseg 178 ms.
+2020-03-19 23:19:53.159  INFO [servicio-zuul-server,665d3129ad9735e9,665d3129ad9735e9,true] 15752 --- [http-nio-8090-exec-6] c.f.s.a.z.f.PostTiempoTranscurridoFilter : Entrando a post filter
+2020-03-19 23:19:53.159  INFO [servicio-zuul-server,665d3129ad9735e9,665d3129ad9735e9,true] 15752 --- [http-nio-8090-exec-6] c.f.s.a.z.f.PostTiempoTranscurridoFilter : Tiempo transcurrido en segundos 0.206 seg.
+2020-03-19 23:19:53.159  INFO [servicio-zuul-server,665d3129ad9735e9,665d3129ad9735e9,true] 15752 --- [http-nio-8090-exec-6] c.f.s.a.z.f.PostTiempoTranscurridoFilter : Tiempo transcurrido en mileseg 206 ms.
+2020-03-19 23:19:54.905  INFO [servicio-zuul-server,bd412c530ae35f2a,bd412c530ae35f2a,true] 15752 --- [http-nio-8090-exec-9] c.f.s.a.z.f.PreTiempoTranscurridoFilter  : POST request enrutado a http://localhost:8090/api/items/jwtp
+2020-03-19 23:19:54.906  WARN [servicio-zuul-server,bd412c530ae35f2a,bd412c530ae35f2a,true] 15752 --- [http-nio-8090-exec-9] o.s.c.n.z.f.r.s.AbstractRibbonCommand    : The Hystrix timeout of 20000ms for the command servicio-items is set lower than the combination of the Ribbon read and connect timeout, 26000ms.
+2020-03-19 23:19:54.912  INFO [servicio-zuul-server,bd412c530ae35f2a,1e9584aab2432c0a,true] 15752 --- [http-nio-8090-exec-10] c.f.s.a.z.f.PreTiempoTranscurridoFilter  : POST request enrutado a http://DESKTOP-9CSVTN3.mshome.net:8090/api/security/oauth/token
+2020-03-19 23:19:54.913  WARN [servicio-zuul-server,bd412c530ae35f2a,1e9584aab2432c0a,true] 15752 --- [http-nio-8090-exec-10] o.s.c.n.z.f.r.s.AbstractRibbonCommand    : The Hystrix timeout of 20000ms for the command servicio-oauth is set lower than the combination of the Ribbon read and connect timeout, 26000ms.
+2020-03-19 23:19:55.092  INFO [servicio-zuul-server,bd412c530ae35f2a,1e9584aab2432c0a,true] 15752 --- [http-nio-8090-exec-10] c.f.s.a.z.f.PostTiempoTranscurridoFilter : Entrando a post filter
+2020-03-19 23:19:55.092  INFO [servicio-zuul-server,bd412c530ae35f2a,1e9584aab2432c0a,true] 15752 --- [http-nio-8090-exec-10] c.f.s.a.z.f.PostTiempoTranscurridoFilter : Tiempo transcurrido en segundos 0.18 seg.
+2020-03-19 23:19:55.093  INFO [servicio-zuul-server,bd412c530ae35f2a,1e9584aab2432c0a,true] 15752 --- [http-nio-8090-exec-10] c.f.s.a.z.f.PostTiempoTranscurridoFilter : Tiempo transcurrido en mileseg 180 ms.
+2020-03-19 23:19:55.109  INFO [servicio-zuul-server,bd412c530ae35f2a,bd412c530ae35f2a,true] 15752 --- [http-nio-8090-exec-9] c.f.s.a.z.f.PostTiempoTranscurridoFilter : Entrando a post filter
+2020-03-19 23:19:55.109  INFO [servicio-zuul-server,bd412c530ae35f2a,bd412c530ae35f2a,true] 15752 --- [http-nio-8090-exec-9] c.f.s.a.z.f.PostTiempoTranscurridoFilter : Tiempo transcurrido en segundos 0.204 seg.
+2020-03-19 23:19:55.109  INFO [servicio-zuul-server,bd412c530ae35f2a,bd412c530ae35f2a,true] 15752 --- [http-nio-8090-exec-9] c.f.s.a.z.f.PostTiempoTranscurridoFilter : Tiempo transcurrido en mileseg 204 ms.
+2020-03-19 23:19:56.130  INFO [servicio-zuul-server,66a3a1038b4f4286,66a3a1038b4f4286,true] 15752 --- [http-nio-8090-exec-2] c.f.s.a.z.f.PreTiempoTranscurridoFilter  : POST request enrutado a http://localhost:8090/api/items/jwtp
+2020-03-19 23:19:56.130  WARN [servicio-zuul-server,66a3a1038b4f4286,66a3a1038b4f4286,true] 15752 --- [http-nio-8090-exec-2] o.s.c.n.z.f.r.s.AbstractRibbonCommand    : The Hystrix timeout of 20000ms for the command servicio-items is set lower than the combination of the Ribbon read and connect timeout, 26000ms.
+2020-03-19 23:19:56.141  INFO [servicio-zuul-server,66a3a1038b4f4286,e43959ca2c7bdad1,true] 15752 --- [http-nio-8090-exec-4] c.f.s.a.z.f.PreTiempoTranscurridoFilter  : POST request enrutado a http://DESKTOP-9CSVTN3.mshome.net:8090/api/security/oauth/token
+2020-03-19 23:19:56.156  WARN [servicio-zuul-server,66a3a1038b4f4286,e43959ca2c7bdad1,true] 15752 --- [http-nio-8090-exec-4] o.s.c.n.z.f.r.s.AbstractRibbonCommand    : The Hystrix timeout of 20000ms for the command servicio-oauth is set lower than the combination of the Ribbon read and connect timeout, 26000ms.
+2020-03-19 23:19:56.332  INFO [servicio-zuul-server,66a3a1038b4f4286,e43959ca2c7bdad1,true] 15752 --- [http-nio-8090-exec-4] c.f.s.a.z.f.PostTiempoTranscurridoFilter : Entrando a post filter
+2020-03-19 23:19:56.332  INFO [servicio-zuul-server,66a3a1038b4f4286,e43959ca2c7bdad1,true] 15752 --- [http-nio-8090-exec-4] c.f.s.a.z.f.PostTiempoTranscurridoFilter : Tiempo transcurrido en segundos 0.19 seg.
+2020-03-19 23:19:56.332  INFO [servicio-zuul-server,66a3a1038b4f4286,e43959ca2c7bdad1,true] 15752 --- [http-nio-8090-exec-4] c.f.s.a.z.f.PostTiempoTranscurridoFilter : Tiempo transcurrido en mileseg 190 ms.
+2020-03-19 23:19:56.346  INFO [servicio-zuul-server,66a3a1038b4f4286,66a3a1038b4f4286,true] 15752 --- [http-nio-8090-exec-2] c.f.s.a.z.f.PostTiempoTranscurridoFilter : Entrando a post filter
+2020-03-19 23:19:56.347  INFO [servicio-zuul-server,66a3a1038b4f4286,66a3a1038b4f4286,true] 15752 --- [http-nio-8090-exec-2] c.f.s.a.z.f.PostTiempoTranscurridoFilter : Tiempo transcurrido en segundos 0.217 seg.
+2020-03-19 23:19:56.347  INFO [servicio-zuul-server,66a3a1038b4f4286,66a3a1038b4f4286,true] 15752 --- [http-nio-8090-exec-2] c.f.s.a.z.f.PostTiempoTranscurridoFilter : Tiempo transcurrido en mileseg 217 ms.
+2020-03-19 23:20:00.134  INFO [servicio-zuul-server,9e3cd7a20df10323,9e3cd7a20df10323,true] 15752 --- [http-nio-8090-exec-3] c.f.s.a.z.f.PreTiempoTranscurridoFilter  : POST request enrutado a http://localhost:8090/api/items/
+2020-03-19 23:20:00.135  WARN [servicio-zuul-server,9e3cd7a20df10323,9e3cd7a20df10323,true] 15752 --- [http-nio-8090-exec-3] o.s.c.n.z.f.r.s.AbstractRibbonCommand    : The Hystrix timeout of 20000ms for the command servicio-items is set lower than the combination of the Ribbon read and connect timeout, 26000ms.
+2020-03-19 23:20:00.142  INFO [servicio-zuul-server,9e3cd7a20df10323,9e3cd7a20df10323,true] 15752 --- [http-nio-8090-exec-3] c.f.s.a.z.f.PostTiempoTranscurridoFilter : Entrando a post filter
+2020-03-19 23:20:00.142  INFO [servicio-zuul-server,9e3cd7a20df10323,9e3cd7a20df10323,true] 15752 --- [http-nio-8090-exec-3] c.f.s.a.z.f.PostTiempoTranscurridoFilter : Tiempo transcurrido en segundos 0.007 seg.
+2020-03-19 23:20:00.142  INFO [servicio-zuul-server,9e3cd7a20df10323,9e3cd7a20df10323,true] 15752 --- [http-nio-8090-exec-3] c.f.s.a.z.f.PostTiempoTranscurridoFilter : Tiempo transcurrido en mileseg 7 ms.
+2020-03-19 23:20:03.380  INFO [servicio-zuul-server,2fdac2022366817e,2fdac2022366817e,true] 15752 --- [http-nio-8090-exec-7] c.f.s.a.z.f.PreTiempoTranscurridoFilter  : POST request enrutado a http://localhost:8090/api/items/listar
+2020-03-19 23:20:03.381  WARN [servicio-zuul-server,2fdac2022366817e,2fdac2022366817e,true] 15752 --- [http-nio-8090-exec-7] o.s.c.n.z.f.r.s.AbstractRibbonCommand    : The Hystrix timeout of 20000ms for the command servicio-items is set lower than the combination of the Ribbon read and connect timeout, 26000ms.
+2020-03-19 23:20:03.389  INFO [servicio-zuul-server,2fdac2022366817e,2fdac2022366817e,true] 15752 --- [http-nio-8090-exec-7] c.f.s.a.z.f.PostTiempoTranscurridoFilter : Entrando a post filter
+2020-03-19 23:20:03.389  INFO [servicio-zuul-server,2fdac2022366817e,2fdac2022366817e,true] 15752 --- [http-nio-8090-exec-7] c.f.s.a.z.f.PostTiempoTranscurridoFilter : Tiempo transcurrido en segundos 0.009 seg.
+2020-03-19 23:20:03.389  INFO [servicio-zuul-server,2fdac2022366817e,2fdac2022366817e,true] 15752 --- [http-nio-8090-exec-7] c.f.s.a.z.f.PostTiempoTranscurridoFilter : Tiempo transcurrido en mileseg 9 ms.
+2020-03-19 23:20:07.644  INFO [servicio-zuul-server,3c0549b0b5697f0a,3c0549b0b5697f0a,true] 15752 --- [http-nio-8090-exec-8] c.f.s.a.z.f.PreTiempoTranscurridoFilter  : GET request enrutado a http://localhost:8090/api/items/listar
+2020-03-19 23:20:07.645  WARN [servicio-zuul-server,3c0549b0b5697f0a,3c0549b0b5697f0a,true] 15752 --- [http-nio-8090-exec-8] o.s.c.n.z.f.r.s.AbstractRibbonCommand    : The Hystrix timeout of 20000ms for the command servicio-items is set lower than the combination of the Ribbon read and connect timeout, 26000ms.
+2020-03-19 23:20:07.665  INFO [servicio-zuul-server,3c0549b0b5697f0a,3c0549b0b5697f0a,true] 15752 --- [http-nio-8090-exec-8] c.f.s.a.z.f.PostTiempoTranscurridoFilter : Entrando a post filter
+2020-03-19 23:20:07.665  INFO [servicio-zuul-server,3c0549b0b5697f0a,3c0549b0b5697f0a,true] 15752 --- [http-nio-8090-exec-8] c.f.s.a.z.f.PostTiempoTranscurridoFilter : Tiempo transcurrido en segundos 0.02 seg.
+2020-03-19 23:20:07.665  INFO [servicio-zuul-server,3c0549b0b5697f0a,3c0549b0b5697f0a,true] 15752 --- [http-nio-8090-exec-8] c.f.s.a.z.f.PostTiempoTranscurridoFilter : Tiempo transcurrido en mileseg 20 ms.
+2020-03-19 23:20:12.525  INFO [servicio-zuul-server,,,] 15752 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-03-19 23:20:19.032  INFO [servicio-zuul-server,3995e236daa67ef2,3995e236daa67ef2,true] 15752 --- [http-nio-8090-exec-10] c.f.s.a.z.f.PreTiempoTranscurridoFilter  : GET request enrutado a http://localhost:8090/api/items/listar
+2020-03-19 23:20:19.033  WARN [servicio-zuul-server,3995e236daa67ef2,3995e236daa67ef2,true] 15752 --- [http-nio-8090-exec-10] o.s.c.n.z.f.r.s.AbstractRibbonCommand    : The Hystrix timeout of 20000ms for the command servicio-items is set lower than the combination of the Ribbon read and connect timeout, 26000ms.
+2020-03-19 23:20:19.047  INFO [servicio-zuul-server,3995e236daa67ef2,3995e236daa67ef2,true] 15752 --- [http-nio-8090-exec-10] c.f.s.a.z.f.PostTiempoTranscurridoFilter : Entrando a post filter
+2020-03-19 23:20:19.047  INFO [servicio-zuul-server,3995e236daa67ef2,3995e236daa67ef2,true] 15752 --- [http-nio-8090-exec-10] c.f.s.a.z.f.PostTiempoTranscurridoFilter : Tiempo transcurrido en segundos 0.014 seg.
+2020-03-19 23:20:19.047  INFO [servicio-zuul-server,3995e236daa67ef2,3995e236daa67ef2,true] 15752 --- [http-nio-8090-exec-10] c.f.s.a.z.f.PostTiempoTranscurridoFilter : Tiempo transcurrido en mileseg 14 ms.
+2020-03-19 23:20:25.664  INFO [servicio-zuul-server,da264287b8c89800,da264287b8c89800,true] 15752 --- [http-nio-8090-exec-9] c.f.s.a.z.f.PreTiempoTranscurridoFilter  : GET request enrutado a http://localhost:8090/api/items/listar
+2020-03-19 23:20:25.665  WARN [servicio-zuul-server,da264287b8c89800,da264287b8c89800,true] 15752 --- [http-nio-8090-exec-9] o.s.c.n.z.f.r.s.AbstractRibbonCommand    : The Hystrix timeout of 20000ms for the command servicio-items is set lower than the combination of the Ribbon read and connect timeout, 26000ms.
+2020-03-19 23:20:25.678  INFO [servicio-zuul-server,da264287b8c89800,da264287b8c89800,true] 15752 --- [http-nio-8090-exec-9] c.f.s.a.z.f.PostTiempoTranscurridoFilter : Entrando a post filter
+2020-03-19 23:20:25.678  INFO [servicio-zuul-server,da264287b8c89800,da264287b8c89800,true] 15752 --- [http-nio-8090-exec-9] c.f.s.a.z.f.PostTiempoTranscurridoFilter : Tiempo transcurrido en segundos 0.013 seg.
+2020-03-19 23:20:25.678  INFO [servicio-zuul-server,da264287b8c89800,da264287b8c89800,true] 15752 --- [http-nio-8090-exec-9] c.f.s.a.z.f.PostTiempoTranscurridoFilter : Tiempo transcurrido en mileseg 13 ms.
+2020-03-19 23:20:47.845  INFO [servicio-zuul-server,dbac3459f1e4d785,dbac3459f1e4d785,true] 15752 --- [http-nio-8090-exec-4] c.f.s.a.z.f.PreTiempoTranscurridoFilter  : GET request enrutado a http://localhost:8090/api/items/listar
+2020-03-19 23:20:47.846  WARN [servicio-zuul-server,dbac3459f1e4d785,dbac3459f1e4d785,true] 15752 --- [http-nio-8090-exec-4] o.s.c.n.z.f.r.s.AbstractRibbonCommand    : The Hystrix timeout of 20000ms for the command servicio-items is set lower than the combination of the Ribbon read and connect timeout, 26000ms.
+2020-03-19 23:20:47.857  INFO [servicio-zuul-server,dbac3459f1e4d785,dbac3459f1e4d785,true] 15752 --- [http-nio-8090-exec-4] c.f.s.a.z.f.PostTiempoTranscurridoFilter : Entrando a post filter
+2020-03-19 23:20:47.857  INFO [servicio-zuul-server,dbac3459f1e4d785,dbac3459f1e4d785,true] 15752 --- [http-nio-8090-exec-4] c.f.s.a.z.f.PostTiempoTranscurridoFilter : Tiempo transcurrido en segundos 0.012 seg.
+2020-03-19 23:20:47.857  INFO [servicio-zuul-server,dbac3459f1e4d785,dbac3459f1e4d785,true] 15752 --- [http-nio-8090-exec-4] c.f.s.a.z.f.PostTiempoTranscurridoFilter : Tiempo transcurrido en mileseg 12 ms.
+2020-03-19 23:21:02.642  INFO [servicio-zuul-server,875df05576ba1d18,875df05576ba1d18,true] 15752 --- [http-nio-8090-exec-5] c.f.s.a.z.f.PreTiempoTranscurridoFilter  : GET request enrutado a http://localhost:8090/api/items/metodoAlternativoError
+2020-03-19 23:21:02.643  WARN [servicio-zuul-server,875df05576ba1d18,875df05576ba1d18,true] 15752 --- [http-nio-8090-exec-5] o.s.c.n.z.f.r.s.AbstractRibbonCommand    : The Hystrix timeout of 20000ms for the command servicio-items is set lower than the combination of the Ribbon read and connect timeout, 26000ms.
+2020-03-19 23:21:02.650  INFO [servicio-zuul-server,875df05576ba1d18,875df05576ba1d18,true] 15752 --- [http-nio-8090-exec-5] c.f.s.a.z.f.PostTiempoTranscurridoFilter : Entrando a post filter
+2020-03-19 23:21:02.650  INFO [servicio-zuul-server,875df05576ba1d18,875df05576ba1d18,true] 15752 --- [http-nio-8090-exec-5] c.f.s.a.z.f.PostTiempoTranscurridoFilter : Tiempo transcurrido en segundos 0.007 seg.
+2020-03-19 23:21:02.650  INFO [servicio-zuul-server,875df05576ba1d18,875df05576ba1d18,true] 15752 --- [http-nio-8090-exec-5] c.f.s.a.z.f.PostTiempoTranscurridoFilter : Tiempo transcurrido en mileseg 7 ms.
+2020-03-19 23:21:31.862  INFO [servicio-zuul-server,71df24f10adcb456,71df24f10adcb456,true] 15752 --- [http-nio-8090-exec-3] c.f.s.a.z.f.PreTiempoTranscurridoFilter  : GET request enrutado a http://localhost:8090/api/items/jwt
+2020-03-19 23:21:31.863  WARN [servicio-zuul-server,71df24f10adcb456,71df24f10adcb456,true] 15752 --- [http-nio-8090-exec-3] o.s.c.n.z.f.r.s.AbstractRibbonCommand    : The Hystrix timeout of 20000ms for the command servicio-items is set lower than the combination of the Ribbon read and connect timeout, 26000ms.
+2020-03-19 23:21:31.868  INFO [servicio-zuul-server,71df24f10adcb456,cbff821522cc1c21,true] 15752 --- [http-nio-8090-exec-7] c.f.s.a.z.f.PreTiempoTranscurridoFilter  : POST request enrutado a http://DESKTOP-9CSVTN3.mshome.net:8090/api/security/oauth/token
+2020-03-19 23:21:31.869  WARN [servicio-zuul-server,71df24f10adcb456,cbff821522cc1c21,true] 15752 --- [http-nio-8090-exec-7] o.s.c.n.z.f.r.s.AbstractRibbonCommand    : The Hystrix timeout of 20000ms for the command servicio-oauth is set lower than the combination of the Ribbon read and connect timeout, 26000ms.
+2020-03-19 23:21:32.042  INFO [servicio-zuul-server,71df24f10adcb456,cbff821522cc1c21,true] 15752 --- [http-nio-8090-exec-7] c.f.s.a.z.f.PostTiempoTranscurridoFilter : Entrando a post filter
+2020-03-19 23:21:32.042  INFO [servicio-zuul-server,71df24f10adcb456,cbff821522cc1c21,true] 15752 --- [http-nio-8090-exec-7] c.f.s.a.z.f.PostTiempoTranscurridoFilter : Tiempo transcurrido en segundos 0.174 seg.
+2020-03-19 23:21:32.042  INFO [servicio-zuul-server,71df24f10adcb456,cbff821522cc1c21,true] 15752 --- [http-nio-8090-exec-7] c.f.s.a.z.f.PostTiempoTranscurridoFilter : Tiempo transcurrido en mileseg 174 ms.
+2020-03-19 23:21:32.045  INFO [servicio-zuul-server,71df24f10adcb456,71df24f10adcb456,true] 15752 --- [http-nio-8090-exec-3] c.f.s.a.z.f.PostTiempoTranscurridoFilter : Entrando a post filter
+2020-03-19 23:21:32.045  INFO [servicio-zuul-server,71df24f10adcb456,71df24f10adcb456,true] 15752 --- [http-nio-8090-exec-3] c.f.s.a.z.f.PostTiempoTranscurridoFilter : Tiempo transcurrido en segundos 0.182 seg.
+2020-03-19 23:21:32.046  INFO [servicio-zuul-server,71df24f10adcb456,71df24f10adcb456,true] 15752 --- [http-nio-8090-exec-3] c.f.s.a.z.f.PostTiempoTranscurridoFilter : Tiempo transcurrido en mileseg 182 ms.
+2020-03-19 23:21:46.197  INFO [servicio-zuul-server,33e9a5e85e75463d,33e9a5e85e75463d,true] 15752 --- [http-nio-8090-exec-8] c.f.s.a.z.f.PreTiempoTranscurridoFilter  : GET request enrutado a http://localhost:8090/api/items/jwtp
+2020-03-19 23:21:46.198  WARN [servicio-zuul-server,33e9a5e85e75463d,33e9a5e85e75463d,true] 15752 --- [http-nio-8090-exec-8] o.s.c.n.z.f.r.s.AbstractRibbonCommand    : The Hystrix timeout of 20000ms for the command servicio-items is set lower than the combination of the Ribbon read and connect timeout, 26000ms.
+2020-03-19 23:21:46.205  INFO [servicio-zuul-server,33e9a5e85e75463d,33e9a5e85e75463d,true] 15752 --- [http-nio-8090-exec-8] c.f.s.a.z.f.PostTiempoTranscurridoFilter : Entrando a post filter
+2020-03-19 23:21:46.205  INFO [servicio-zuul-server,33e9a5e85e75463d,33e9a5e85e75463d,true] 15752 --- [http-nio-8090-exec-8] c.f.s.a.z.f.PostTiempoTranscurridoFilter : Tiempo transcurrido en segundos 0.008 seg.
+2020-03-19 23:21:46.205  INFO [servicio-zuul-server,33e9a5e85e75463d,33e9a5e85e75463d,true] 15752 --- [http-nio-8090-exec-8] c.f.s.a.z.f.PostTiempoTranscurridoFilter : Tiempo transcurrido en mileseg 8 ms.
+2020-03-19 23:21:49.807  INFO [servicio-zuul-server,95d15827db87ae7e,95d15827db87ae7e,true] 15752 --- [http-nio-8090-exec-10] c.f.s.a.z.f.PreTiempoTranscurridoFilter  : POST request enrutado a http://localhost:8090/api/items/jwtp
+2020-03-19 23:21:49.808  WARN [servicio-zuul-server,95d15827db87ae7e,95d15827db87ae7e,true] 15752 --- [http-nio-8090-exec-10] o.s.c.n.z.f.r.s.AbstractRibbonCommand    : The Hystrix timeout of 20000ms for the command servicio-items is set lower than the combination of the Ribbon read and connect timeout, 26000ms.
+2020-03-19 23:21:49.816  INFO [servicio-zuul-server,95d15827db87ae7e,95d15827db87ae7e,true] 15752 --- [http-nio-8090-exec-10] c.f.s.a.z.f.PostTiempoTranscurridoFilter : Entrando a post filter
+2020-03-19 23:21:49.816  INFO [servicio-zuul-server,95d15827db87ae7e,95d15827db87ae7e,true] 15752 --- [http-nio-8090-exec-10] c.f.s.a.z.f.PostTiempoTranscurridoFilter : Tiempo transcurrido en segundos 0.009 seg.
+2020-03-19 23:21:49.816  INFO [servicio-zuul-server,95d15827db87ae7e,95d15827db87ae7e,true] 15752 --- [http-nio-8090-exec-10] c.f.s.a.z.f.PostTiempoTranscurridoFilter : Tiempo transcurrido en mileseg 9 ms.
+2020-03-19 23:21:55.882  INFO [servicio-zuul-server,8e7a403cdf06d411,8e7a403cdf06d411,true] 15752 --- [http-nio-8090-exec-9] c.f.s.a.z.f.PreTiempoTranscurridoFilter  : POST request enrutado a http://localhost:8090/api/items/jwtp
+2020-03-19 23:21:55.883  WARN [servicio-zuul-server,8e7a403cdf06d411,8e7a403cdf06d411,true] 15752 --- [http-nio-8090-exec-9] o.s.c.n.z.f.r.s.AbstractRibbonCommand    : The Hystrix timeout of 20000ms for the command servicio-items is set lower than the combination of the Ribbon read and connect timeout, 26000ms.
+2020-03-19 23:21:55.902  INFO [servicio-zuul-server,8e7a403cdf06d411,8e7a403cdf06d411,true] 15752 --- [http-nio-8090-exec-9] c.f.s.a.z.f.PostTiempoTranscurridoFilter : Entrando a post filter
+2020-03-19 23:21:55.902  INFO [servicio-zuul-server,8e7a403cdf06d411,8e7a403cdf06d411,true] 15752 --- [http-nio-8090-exec-9] c.f.s.a.z.f.PostTiempoTranscurridoFilter : Tiempo transcurrido en segundos 0.019 seg.
+2020-03-19 23:21:55.902  INFO [servicio-zuul-server,8e7a403cdf06d411,8e7a403cdf06d411,true] 15752 --- [http-nio-8090-exec-9] c.f.s.a.z.f.PostTiempoTranscurridoFilter : Tiempo transcurrido en mileseg 19 ms.
+2020-03-19 23:21:57.620  INFO [servicio-zuul-server,b301087ca89ec372,b301087ca89ec372,true] 15752 --- [http-nio-8090-exec-4] c.f.s.a.z.f.PreTiempoTranscurridoFilter  : POST request enrutado a http://localhost:8090/api/items/jwtp
+2020-03-19 23:21:57.621  WARN [servicio-zuul-server,b301087ca89ec372,b301087ca89ec372,true] 15752 --- [http-nio-8090-exec-4] o.s.c.n.z.f.r.s.AbstractRibbonCommand    : The Hystrix timeout of 20000ms for the command servicio-items is set lower than the combination of the Ribbon read and connect timeout, 26000ms.
+2020-03-19 23:21:57.630  INFO [servicio-zuul-server,b301087ca89ec372,bb03dd8b161a7b91,true] 15752 --- [http-nio-8090-exec-2] c.f.s.a.z.f.PreTiempoTranscurridoFilter  : POST request enrutado a http://DESKTOP-9CSVTN3.mshome.net:8090/api/security/oauth/token
+2020-03-19 23:21:57.631  WARN [servicio-zuul-server,b301087ca89ec372,bb03dd8b161a7b91,true] 15752 --- [http-nio-8090-exec-2] o.s.c.n.z.f.r.s.AbstractRibbonCommand    : The Hystrix timeout of 20000ms for the command servicio-oauth is set lower than the combination of the Ribbon read and connect timeout, 26000ms.
+2020-03-19 23:21:57.815  INFO [servicio-zuul-server,b301087ca89ec372,bb03dd8b161a7b91,true] 15752 --- [http-nio-8090-exec-2] c.f.s.a.z.f.PostTiempoTranscurridoFilter : Entrando a post filter
+2020-03-19 23:21:57.816  INFO [servicio-zuul-server,b301087ca89ec372,bb03dd8b161a7b91,true] 15752 --- [http-nio-8090-exec-2] c.f.s.a.z.f.PostTiempoTranscurridoFilter : Tiempo transcurrido en segundos 0.186 seg.
+2020-03-19 23:21:57.816  INFO [servicio-zuul-server,b301087ca89ec372,bb03dd8b161a7b91,true] 15752 --- [http-nio-8090-exec-2] c.f.s.a.z.f.PostTiempoTranscurridoFilter : Tiempo transcurrido en mileseg 186 ms.
+2020-03-19 23:21:57.832  INFO [servicio-zuul-server,b301087ca89ec372,b301087ca89ec372,true] 15752 --- [http-nio-8090-exec-4] c.f.s.a.z.f.PostTiempoTranscurridoFilter : Entrando a post filter
+2020-03-19 23:21:57.832  INFO [servicio-zuul-server,b301087ca89ec372,b301087ca89ec372,true] 15752 --- [http-nio-8090-exec-4] c.f.s.a.z.f.PostTiempoTranscurridoFilter : Tiempo transcurrido en segundos 0.212 seg.
+2020-03-19 23:21:57.832  INFO [servicio-zuul-server,b301087ca89ec372,b301087ca89ec372,true] 15752 --- [http-nio-8090-exec-4] c.f.s.a.z.f.PostTiempoTranscurridoFilter : Tiempo transcurrido en mileseg 212 ms.
+2020-03-19 23:22:12.485  INFO [servicio-zuul-server,829728eed5605c55,829728eed5605c55,true] 15752 --- [http-nio-8090-exec-3] c.f.s.a.z.f.PreTiempoTranscurridoFilter  : POST request enrutado a http://localhost:8090/api/items/probandoTimeout
+2020-03-19 23:22:12.486  WARN [servicio-zuul-server,829728eed5605c55,829728eed5605c55,true] 15752 --- [http-nio-8090-exec-3] o.s.c.n.z.f.r.s.AbstractRibbonCommand    : The Hystrix timeout of 20000ms for the command servicio-items is set lower than the combination of the Ribbon read and connect timeout, 26000ms.
+2020-03-19 23:22:12.492  INFO [servicio-zuul-server,829728eed5605c55,829728eed5605c55,true] 15752 --- [http-nio-8090-exec-3] c.f.s.a.z.f.PostTiempoTranscurridoFilter : Entrando a post filter
+2020-03-19 23:22:12.492  INFO [servicio-zuul-server,829728eed5605c55,829728eed5605c55,true] 15752 --- [http-nio-8090-exec-3] c.f.s.a.z.f.PostTiempoTranscurridoFilter : Tiempo transcurrido en segundos 0.007 seg.
+2020-03-19 23:22:12.492  INFO [servicio-zuul-server,829728eed5605c55,829728eed5605c55,true] 15752 --- [http-nio-8090-exec-3] c.f.s.a.z.f.PostTiempoTranscurridoFilter : Tiempo transcurrido en mileseg 7 ms.
+2020-03-19 23:22:15.487  INFO [servicio-zuul-server,3e0793891cfde825,3e0793891cfde825,true] 15752 --- [http-nio-8090-exec-6] c.f.s.a.z.f.PreTiempoTranscurridoFilter  : GET request enrutado a http://localhost:8090/api/items/probandoTimeout
+2020-03-19 23:22:15.488  WARN [servicio-zuul-server,3e0793891cfde825,3e0793891cfde825,true] 15752 --- [http-nio-8090-exec-6] o.s.c.n.z.f.r.s.AbstractRibbonCommand    : The Hystrix timeout of 20000ms for the command servicio-items is set lower than the combination of the Ribbon read and connect timeout, 26000ms.
+2020-03-19 23:22:17.513  INFO [servicio-zuul-server,3e0793891cfde825,3e0793891cfde825,true] 15752 --- [http-nio-8090-exec-6] c.f.s.a.z.f.PostTiempoTranscurridoFilter : Entrando a post filter
+2020-03-19 23:22:17.513  INFO [servicio-zuul-server,3e0793891cfde825,3e0793891cfde825,true] 15752 --- [http-nio-8090-exec-6] c.f.s.a.z.f.PostTiempoTranscurridoFilter : Tiempo transcurrido en segundos 2.026 seg.
+2020-03-19 23:22:17.513  INFO [servicio-zuul-server,3e0793891cfde825,3e0793891cfde825,true] 15752 --- [http-nio-8090-exec-6] c.f.s.a.z.f.PostTiempoTranscurridoFilter : Tiempo transcurrido en mileseg 2026 ms.
+2020-03-19 23:22:37.096  INFO [servicio-zuul-server,9437b61d772b937a,9437b61d772b937a,true] 15752 --- [http-nio-8090-exec-10] c.f.s.a.z.f.PreTiempoTranscurridoFilter  : GET request enrutado a http://localhost:8090/api/items/ver/2/cantidad/3
+2020-03-19 23:22:37.097  WARN [servicio-zuul-server,9437b61d772b937a,9437b61d772b937a,true] 15752 --- [http-nio-8090-exec-10] o.s.c.n.z.f.r.s.AbstractRibbonCommand    : The Hystrix timeout of 20000ms for the command servicio-items is set lower than the combination of the Ribbon read and connect timeout, 26000ms.
+2020-03-19 23:22:37.129  INFO [servicio-zuul-server,9437b61d772b937a,9437b61d772b937a,true] 15752 --- [http-nio-8090-exec-10] c.f.s.a.z.f.PostTiempoTranscurridoFilter : Entrando a post filter
+2020-03-19 23:22:37.130  INFO [servicio-zuul-server,9437b61d772b937a,9437b61d772b937a,true] 15752 --- [http-nio-8090-exec-10] c.f.s.a.z.f.PostTiempoTranscurridoFilter : Tiempo transcurrido en segundos 0.034 seg.
+2020-03-19 23:22:37.130  INFO [servicio-zuul-server,9437b61d772b937a,9437b61d772b937a,true] 15752 --- [http-nio-8090-exec-10] c.f.s.a.z.f.PostTiempoTranscurridoFilter : Tiempo transcurrido en mileseg 34 ms.
+2020-03-19 23:22:38.945  INFO [servicio-zuul-server,2ca3252351943e61,2ca3252351943e61,true] 15752 --- [http-nio-8090-exec-9] c.f.s.a.z.f.PreTiempoTranscurridoFilter  : GET request enrutado a http://localhost:8090/api/items/ver/2/cantidad/3
+2020-03-19 23:22:38.945  WARN [servicio-zuul-server,2ca3252351943e61,2ca3252351943e61,true] 15752 --- [http-nio-8090-exec-9] o.s.c.n.z.f.r.s.AbstractRibbonCommand    : The Hystrix timeout of 20000ms for the command servicio-items is set lower than the combination of the Ribbon read and connect timeout, 26000ms.
+2020-03-19 23:22:38.955  INFO [servicio-zuul-server,2ca3252351943e61,2ca3252351943e61,true] 15752 --- [http-nio-8090-exec-9] c.f.s.a.z.f.PostTiempoTranscurridoFilter : Entrando a post filter
+2020-03-19 23:22:38.955  INFO [servicio-zuul-server,2ca3252351943e61,2ca3252351943e61,true] 15752 --- [http-nio-8090-exec-9] c.f.s.a.z.f.PostTiempoTranscurridoFilter : Tiempo transcurrido en segundos 0.01 seg.
+2020-03-19 23:22:38.955  INFO [servicio-zuul-server,2ca3252351943e61,2ca3252351943e61,true] 15752 --- [http-nio-8090-exec-9] c.f.s.a.z.f.PostTiempoTranscurridoFilter : Tiempo transcurrido en mileseg 10 ms.
+2020-03-19 23:23:30.306  INFO [servicio-zuul-server,119e35196f14cd40,119e35196f14cd40,true] 15752 --- [http-nio-8090-exec-5] c.f.s.a.z.f.PreTiempoTranscurridoFilter  : GET request enrutado a http://localhost:8090/api/items/ver/2/cantidad/3
+2020-03-19 23:23:30.307  WARN [servicio-zuul-server,119e35196f14cd40,119e35196f14cd40,true] 15752 --- [http-nio-8090-exec-5] o.s.c.n.z.f.r.s.AbstractRibbonCommand    : The Hystrix timeout of 20000ms for the command servicio-items is set lower than the combination of the Ribbon read and connect timeout, 26000ms.
+2020-03-19 23:23:30.317  INFO [servicio-zuul-server,119e35196f14cd40,119e35196f14cd40,true] 15752 --- [http-nio-8090-exec-5] c.f.s.a.z.f.PostTiempoTranscurridoFilter : Entrando a post filter
+2020-03-19 23:23:30.317  INFO [servicio-zuul-server,119e35196f14cd40,119e35196f14cd40,true] 15752 --- [http-nio-8090-exec-5] c.f.s.a.z.f.PostTiempoTranscurridoFilter : Tiempo transcurrido en segundos 0.011 seg.
+2020-03-19 23:23:30.317  INFO [servicio-zuul-server,119e35196f14cd40,119e35196f14cd40,true] 15752 --- [http-nio-8090-exec-5] c.f.s.a.z.f.PostTiempoTranscurridoFilter : Tiempo transcurrido en mileseg 11 ms.
+2020-03-19 23:23:36.576  INFO [servicio-zuul-server,9b9d70db0176cbd4,9b9d70db0176cbd4,true] 15752 --- [http-nio-8090-exec-7] c.f.s.a.z.f.PreTiempoTranscurridoFilter  : GET request enrutado a http://localhost:8090/api/items/ver/2/cantidad/3
+2020-03-19 23:23:36.577  WARN [servicio-zuul-server,9b9d70db0176cbd4,9b9d70db0176cbd4,true] 15752 --- [http-nio-8090-exec-7] o.s.c.n.z.f.r.s.AbstractRibbonCommand    : The Hystrix timeout of 20000ms for the command servicio-items is set lower than the combination of the Ribbon read and connect timeout, 26000ms.
+2020-03-19 23:23:36.588  INFO [servicio-zuul-server,9b9d70db0176cbd4,9b9d70db0176cbd4,true] 15752 --- [http-nio-8090-exec-7] c.f.s.a.z.f.PostTiempoTranscurridoFilter : Entrando a post filter
+2020-03-19 23:23:36.588  INFO [servicio-zuul-server,9b9d70db0176cbd4,9b9d70db0176cbd4,true] 15752 --- [http-nio-8090-exec-7] c.f.s.a.z.f.PostTiempoTranscurridoFilter : Tiempo transcurrido en segundos 0.011 seg.
+2020-03-19 23:23:36.589  INFO [servicio-zuul-server,9b9d70db0176cbd4,9b9d70db0176cbd4,true] 15752 --- [http-nio-8090-exec-7] c.f.s.a.z.f.PostTiempoTranscurridoFilter : Tiempo transcurrido en mileseg 11 ms.
+2020-03-19 23:25:12.527  INFO [servicio-zuul-server,,,] 15752 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-03-19 23:29:32.940  INFO [servicio-zuul-server,804388ce89e9891f,804388ce89e9891f,true] 15752 --- [http-nio-8090-exec-6] c.f.s.a.z.f.PreTiempoTranscurridoFilter  : POST request enrutado a http://localhost:8090/api/security/oauth/token
+2020-03-19 23:29:32.941  WARN [servicio-zuul-server,804388ce89e9891f,804388ce89e9891f,true] 15752 --- [http-nio-8090-exec-6] o.s.c.n.z.f.r.s.AbstractRibbonCommand    : The Hystrix timeout of 20000ms for the command servicio-oauth is set lower than the combination of the Ribbon read and connect timeout, 26000ms.
+2020-03-19 23:29:33.115  INFO [servicio-zuul-server,804388ce89e9891f,804388ce89e9891f,true] 15752 --- [http-nio-8090-exec-6] c.f.s.a.z.f.PostTiempoTranscurridoFilter : Entrando a post filter
+2020-03-19 23:29:33.115  INFO [servicio-zuul-server,804388ce89e9891f,804388ce89e9891f,true] 15752 --- [http-nio-8090-exec-6] c.f.s.a.z.f.PostTiempoTranscurridoFilter : Tiempo transcurrido en segundos 0.174 seg.
+2020-03-19 23:29:33.115  INFO [servicio-zuul-server,804388ce89e9891f,804388ce89e9891f,true] 15752 --- [http-nio-8090-exec-6] c.f.s.a.z.f.PostTiempoTranscurridoFilter : Tiempo transcurrido en mileseg 174 ms.
+2020-03-19 23:29:51.524  INFO [servicio-zuul-server,5a9957e32863f054,5a9957e32863f054,true] 15752 --- [http-nio-8090-exec-10] c.f.s.a.z.f.PreTiempoTranscurridoFilter  : POST request enrutado a http://localhost:8090/api/security/oauth/token
+2020-03-19 23:29:51.524  WARN [servicio-zuul-server,5a9957e32863f054,5a9957e32863f054,true] 15752 --- [http-nio-8090-exec-10] o.s.c.n.z.f.r.s.AbstractRibbonCommand    : The Hystrix timeout of 20000ms for the command servicio-oauth is set lower than the combination of the Ribbon read and connect timeout, 26000ms.
+2020-03-19 23:29:51.698  INFO [servicio-zuul-server,5a9957e32863f054,5a9957e32863f054,true] 15752 --- [http-nio-8090-exec-10] c.f.s.a.z.f.PostTiempoTranscurridoFilter : Entrando a post filter
+2020-03-19 23:29:51.698  INFO [servicio-zuul-server,5a9957e32863f054,5a9957e32863f054,true] 15752 --- [http-nio-8090-exec-10] c.f.s.a.z.f.PostTiempoTranscurridoFilter : Tiempo transcurrido en segundos 0.174 seg.
+2020-03-19 23:29:51.698  INFO [servicio-zuul-server,5a9957e32863f054,5a9957e32863f054,true] 15752 --- [http-nio-8090-exec-10] c.f.s.a.z.f.PostTiempoTranscurridoFilter : Tiempo transcurrido en mileseg 174 ms.
+2020-03-19 23:30:12.529  INFO [servicio-zuul-server,,,] 15752 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-03-19 23:32:07.711  INFO [servicio-zuul-server,1a8830df7878dd8b,1a8830df7878dd8b,true] 15752 --- [http-nio-8090-exec-1] c.f.s.a.z.f.PreTiempoTranscurridoFilter  : POST request enrutado a http://localhost:8090/api/security/oauth/token
+2020-03-19 23:32:07.711  WARN [servicio-zuul-server,1a8830df7878dd8b,1a8830df7878dd8b,true] 15752 --- [http-nio-8090-exec-1] o.s.c.n.z.f.r.s.AbstractRibbonCommand    : The Hystrix timeout of 20000ms for the command servicio-oauth is set lower than the combination of the Ribbon read and connect timeout, 26000ms.
+2020-03-19 23:32:07.889  INFO [servicio-zuul-server,1a8830df7878dd8b,1a8830df7878dd8b,true] 15752 --- [http-nio-8090-exec-1] c.f.s.a.z.f.PostTiempoTranscurridoFilter : Entrando a post filter
+2020-03-19 23:32:07.889  INFO [servicio-zuul-server,1a8830df7878dd8b,1a8830df7878dd8b,true] 15752 --- [http-nio-8090-exec-1] c.f.s.a.z.f.PostTiempoTranscurridoFilter : Tiempo transcurrido en segundos 0.178 seg.
+2020-03-19 23:32:07.889  INFO [servicio-zuul-server,1a8830df7878dd8b,1a8830df7878dd8b,true] 15752 --- [http-nio-8090-exec-1] c.f.s.a.z.f.PostTiempoTranscurridoFilter : Tiempo transcurrido en mileseg 178 ms.
+2020-03-19 23:33:17.279  INFO [servicio-zuul-server,e1b24afaaa4cbb79,e1b24afaaa4cbb79,true] 15752 --- [http-nio-8090-exec-4] c.f.s.a.z.f.PreTiempoTranscurridoFilter  : POST request enrutado a http://localhost:8090/api/security/oauth/token
+2020-03-19 23:33:17.280  WARN [servicio-zuul-server,e1b24afaaa4cbb79,e1b24afaaa4cbb79,true] 15752 --- [http-nio-8090-exec-4] o.s.c.n.z.f.r.s.AbstractRibbonCommand    : The Hystrix timeout of 20000ms for the command servicio-oauth is set lower than the combination of the Ribbon read and connect timeout, 26000ms.
+2020-03-19 23:33:17.457  INFO [servicio-zuul-server,e1b24afaaa4cbb79,e1b24afaaa4cbb79,true] 15752 --- [http-nio-8090-exec-4] c.f.s.a.z.f.PostTiempoTranscurridoFilter : Entrando a post filter
+2020-03-19 23:33:17.457  INFO [servicio-zuul-server,e1b24afaaa4cbb79,e1b24afaaa4cbb79,true] 15752 --- [http-nio-8090-exec-4] c.f.s.a.z.f.PostTiempoTranscurridoFilter : Tiempo transcurrido en segundos 0.177 seg.
+2020-03-19 23:33:17.458  INFO [servicio-zuul-server,e1b24afaaa4cbb79,e1b24afaaa4cbb79,true] 15752 --- [http-nio-8090-exec-4] c.f.s.a.z.f.PostTiempoTranscurridoFilter : Tiempo transcurrido en mileseg 177 ms.
+2020-03-19 23:33:52.890  INFO [servicio-zuul-server,db75653b734c7c9d,db75653b734c7c9d,true] 15752 --- [http-nio-8090-exec-7] c.f.s.a.z.f.PreTiempoTranscurridoFilter  : POST request enrutado a http://localhost:8090/api/security/oauth/token
+2020-03-19 23:33:52.890  WARN [servicio-zuul-server,db75653b734c7c9d,db75653b734c7c9d,true] 15752 --- [http-nio-8090-exec-7] o.s.c.n.z.f.r.s.AbstractRibbonCommand    : The Hystrix timeout of 20000ms for the command servicio-oauth is set lower than the combination of the Ribbon read and connect timeout, 26000ms.
+2020-03-19 23:33:53.068  INFO [servicio-zuul-server,db75653b734c7c9d,db75653b734c7c9d,true] 15752 --- [http-nio-8090-exec-7] c.f.s.a.z.f.PostTiempoTranscurridoFilter : Entrando a post filter
+2020-03-19 23:33:53.068  INFO [servicio-zuul-server,db75653b734c7c9d,db75653b734c7c9d,true] 15752 --- [http-nio-8090-exec-7] c.f.s.a.z.f.PostTiempoTranscurridoFilter : Tiempo transcurrido en segundos 0.178 seg.
+2020-03-19 23:33:53.068  INFO [servicio-zuul-server,db75653b734c7c9d,db75653b734c7c9d,true] 15752 --- [http-nio-8090-exec-7] c.f.s.a.z.f.PostTiempoTranscurridoFilter : Tiempo transcurrido en mileseg 178 ms.
+2020-03-19 23:34:52.241  INFO [servicio-zuul-server,23294a413e0e2920,23294a413e0e2920,true] 15752 --- [http-nio-8090-exec-6] c.f.s.a.z.f.PreTiempoTranscurridoFilter  : POST request enrutado a http://localhost:8090/api/security/oauth/token
+2020-03-19 23:34:52.241  WARN [servicio-zuul-server,23294a413e0e2920,23294a413e0e2920,true] 15752 --- [http-nio-8090-exec-6] o.s.c.n.z.f.r.s.AbstractRibbonCommand    : The Hystrix timeout of 20000ms for the command servicio-oauth is set lower than the combination of the Ribbon read and connect timeout, 26000ms.
+2020-03-19 23:34:52.417  INFO [servicio-zuul-server,23294a413e0e2920,23294a413e0e2920,true] 15752 --- [http-nio-8090-exec-6] c.f.s.a.z.f.PostTiempoTranscurridoFilter : Entrando a post filter
+2020-03-19 23:34:52.417  INFO [servicio-zuul-server,23294a413e0e2920,23294a413e0e2920,true] 15752 --- [http-nio-8090-exec-6] c.f.s.a.z.f.PostTiempoTranscurridoFilter : Tiempo transcurrido en segundos 0.176 seg.
+2020-03-19 23:34:52.417  INFO [servicio-zuul-server,23294a413e0e2920,23294a413e0e2920,true] 15752 --- [http-nio-8090-exec-6] c.f.s.a.z.f.PostTiempoTranscurridoFilter : Tiempo transcurrido en mileseg 176 ms.
+2020-03-19 23:35:12.531  INFO [servicio-zuul-server,,,] 15752 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-03-19 23:39:10.339  INFO [servicio-zuul-server,a10809798aad2f66,a10809798aad2f66,true] 15752 --- [http-nio-8090-exec-10] c.f.s.a.z.f.PreTiempoTranscurridoFilter  : POST request enrutado a http://localhost:8090/api/security/oauth/token
+2020-03-19 23:39:10.339  WARN [servicio-zuul-server,a10809798aad2f66,a10809798aad2f66,true] 15752 --- [http-nio-8090-exec-10] o.s.c.n.z.f.r.s.AbstractRibbonCommand    : The Hystrix timeout of 20000ms for the command servicio-oauth is set lower than the combination of the Ribbon read and connect timeout, 26000ms.
+2020-03-19 23:39:10.515  INFO [servicio-zuul-server,a10809798aad2f66,a10809798aad2f66,true] 15752 --- [http-nio-8090-exec-10] c.f.s.a.z.f.PostTiempoTranscurridoFilter : Entrando a post filter
+2020-03-19 23:39:10.515  INFO [servicio-zuul-server,a10809798aad2f66,a10809798aad2f66,true] 15752 --- [http-nio-8090-exec-10] c.f.s.a.z.f.PostTiempoTranscurridoFilter : Tiempo transcurrido en segundos 0.176 seg.
+2020-03-19 23:39:10.515  INFO [servicio-zuul-server,a10809798aad2f66,a10809798aad2f66,true] 15752 --- [http-nio-8090-exec-10] c.f.s.a.z.f.PostTiempoTranscurridoFilter : Tiempo transcurrido en mileseg 176 ms.
+2020-03-19 23:40:12.533  INFO [servicio-zuul-server,,,] 15752 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-03-19 23:43:55.370  INFO [servicio-zuul-server,cf21bc6a95cb4cab,cf21bc6a95cb4cab,true] 15752 --- [http-nio-8090-exec-1] c.f.s.a.z.f.PreTiempoTranscurridoFilter  : POST request enrutado a http://localhost:8090/api/security/oauth/token
+2020-03-19 23:43:55.372  WARN [servicio-zuul-server,cf21bc6a95cb4cab,cf21bc6a95cb4cab,true] 15752 --- [http-nio-8090-exec-1] o.s.c.n.z.f.r.s.AbstractRibbonCommand    : The Hystrix timeout of 20000ms for the command servicio-oauth is set lower than the combination of the Ribbon read and connect timeout, 26000ms.
+2020-03-19 23:43:55.548  INFO [servicio-zuul-server,cf21bc6a95cb4cab,cf21bc6a95cb4cab,true] 15752 --- [http-nio-8090-exec-1] c.f.s.a.z.f.PostTiempoTranscurridoFilter : Entrando a post filter
+2020-03-19 23:43:55.548  INFO [servicio-zuul-server,cf21bc6a95cb4cab,cf21bc6a95cb4cab,true] 15752 --- [http-nio-8090-exec-1] c.f.s.a.z.f.PostTiempoTranscurridoFilter : Tiempo transcurrido en segundos 0.177 seg.
+2020-03-19 23:43:55.548  INFO [servicio-zuul-server,cf21bc6a95cb4cab,cf21bc6a95cb4cab,true] 15752 --- [http-nio-8090-exec-1] c.f.s.a.z.f.PostTiempoTranscurridoFilter : Tiempo transcurrido en mileseg 177 ms.
+2020-03-19 23:44:00.383  INFO [servicio-zuul-server,41edf21588bf16af,41edf21588bf16af,true] 15752 --- [http-nio-8090-exec-2] c.f.s.a.z.f.PreTiempoTranscurridoFilter  : GET request enrutado a http://localhost:8090/api/items/ver/2/cantidad/3
+2020-03-19 23:44:00.384  WARN [servicio-zuul-server,41edf21588bf16af,41edf21588bf16af,true] 15752 --- [http-nio-8090-exec-2] o.s.c.n.z.f.r.s.AbstractRibbonCommand    : The Hystrix timeout of 20000ms for the command servicio-items is set lower than the combination of the Ribbon read and connect timeout, 26000ms.
+2020-03-19 23:44:00.395  INFO [servicio-zuul-server,41edf21588bf16af,41edf21588bf16af,true] 15752 --- [http-nio-8090-exec-2] c.f.s.a.z.f.PostTiempoTranscurridoFilter : Entrando a post filter
+2020-03-19 23:44:00.395  INFO [servicio-zuul-server,41edf21588bf16af,41edf21588bf16af,true] 15752 --- [http-nio-8090-exec-2] c.f.s.a.z.f.PostTiempoTranscurridoFilter : Tiempo transcurrido en segundos 0.012 seg.
+2020-03-19 23:44:00.395  INFO [servicio-zuul-server,41edf21588bf16af,41edf21588bf16af,true] 15752 --- [http-nio-8090-exec-2] c.f.s.a.z.f.PostTiempoTranscurridoFilter : Tiempo transcurrido en mileseg 12 ms.
+2020-03-19 23:44:51.663  INFO [servicio-zuul-server,0cd24f888260ad46,0cd24f888260ad46,true] 15752 --- [http-nio-8090-exec-5] c.f.s.a.z.f.PreTiempoTranscurridoFilter  : POST request enrutado a http://localhost:8090/api/security/oauth/token
+2020-03-19 23:44:51.663  WARN [servicio-zuul-server,0cd24f888260ad46,0cd24f888260ad46,true] 15752 --- [http-nio-8090-exec-5] o.s.c.n.z.f.r.s.AbstractRibbonCommand    : The Hystrix timeout of 20000ms for the command servicio-oauth is set lower than the combination of the Ribbon read and connect timeout, 26000ms.
+2020-03-19 23:44:51.842  INFO [servicio-zuul-server,0cd24f888260ad46,0cd24f888260ad46,true] 15752 --- [http-nio-8090-exec-5] c.f.s.a.z.f.PostTiempoTranscurridoFilter : Entrando a post filter
+2020-03-19 23:44:51.842  INFO [servicio-zuul-server,0cd24f888260ad46,0cd24f888260ad46,true] 15752 --- [http-nio-8090-exec-5] c.f.s.a.z.f.PostTiempoTranscurridoFilter : Tiempo transcurrido en segundos 0.179 seg.
+2020-03-19 23:44:51.842  INFO [servicio-zuul-server,0cd24f888260ad46,0cd24f888260ad46,true] 15752 --- [http-nio-8090-exec-5] c.f.s.a.z.f.PostTiempoTranscurridoFilter : Tiempo transcurrido en mileseg 179 ms.
+2020-03-19 23:44:54.384  INFO [servicio-zuul-server,d11343b5dba58913,d11343b5dba58913,true] 15752 --- [http-nio-8090-exec-7] c.f.s.a.z.f.PreTiempoTranscurridoFilter  : GET request enrutado a http://localhost:8090/api/items/ver/2/cantidad/3
+2020-03-19 23:44:54.385  WARN [servicio-zuul-server,d11343b5dba58913,d11343b5dba58913,true] 15752 --- [http-nio-8090-exec-7] o.s.c.n.z.f.r.s.AbstractRibbonCommand    : The Hystrix timeout of 20000ms for the command servicio-items is set lower than the combination of the Ribbon read and connect timeout, 26000ms.
+2020-03-19 23:44:54.398  INFO [servicio-zuul-server,d11343b5dba58913,d11343b5dba58913,true] 15752 --- [http-nio-8090-exec-7] c.f.s.a.z.f.PostTiempoTranscurridoFilter : Entrando a post filter
+2020-03-19 23:44:54.398  INFO [servicio-zuul-server,d11343b5dba58913,d11343b5dba58913,true] 15752 --- [http-nio-8090-exec-7] c.f.s.a.z.f.PostTiempoTranscurridoFilter : Tiempo transcurrido en segundos 0.014 seg.
+2020-03-19 23:44:54.398  INFO [servicio-zuul-server,d11343b5dba58913,d11343b5dba58913,true] 15752 --- [http-nio-8090-exec-7] c.f.s.a.z.f.PostTiempoTranscurridoFilter : Tiempo transcurrido en mileseg 14 ms.
+2020-03-19 23:45:12.534  INFO [servicio-zuul-server,,,] 15752 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-03-19 23:45:17.323 ERROR [servicio-zuul-server,,,] 15752 --- [DiscoveryClient-HeartbeatExecutor-0] c.n.d.s.t.d.RedirectingEurekaHttpClient  : Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://localhost:8761/eureka/}
+
+com.sun.jersey.api.client.ClientHandlerException: java.net.ConnectException: Connection refused: connect
+	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:187) ~[jersey-apache-client4-1.19.1.jar:1.19.1]
+	at com.sun.jersey.api.client.filter.GZIPContentEncodingFilter.handle(GZIPContentEncodingFilter.java:123) ~[jersey-client-1.19.1.jar:1.19.1]
+	at com.netflix.discovery.EurekaIdentityHeaderFilter.handle(EurekaIdentityHeaderFilter.java:27) ~[eureka-client-1.9.8.jar:1.9.8]
+	at com.sun.jersey.api.client.Client.handle(Client.java:652) ~[jersey-client-1.19.1.jar:1.19.1]
+	at com.sun.jersey.api.client.WebResource.handle(WebResource.java:682) ~[jersey-client-1.19.1.jar:1.19.1]
+	at com.sun.jersey.api.client.WebResource.access$200(WebResource.java:74) ~[jersey-client-1.19.1.jar:1.19.1]
+	at com.sun.jersey.api.client.WebResource$Builder.put(WebResource.java:529) ~[jersey-client-1.19.1.jar:1.19.1]
+	at com.netflix.discovery.shared.transport.jersey.AbstractJerseyEurekaHttpClient.sendHeartBeat(AbstractJerseyEurekaHttpClient.java:102) ~[eureka-client-1.9.8.jar:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92) [eureka-client-1.9.8.jar:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.MetricsCollectingEurekaHttpClient.execute(MetricsCollectingEurekaHttpClient.java:73) ~[eureka-client-1.9.8.jar:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89) [eureka-client-1.9.8.jar:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92) [eureka-client-1.9.8.jar:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:89) ~[eureka-client-1.9.8.jar:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89) [eureka-client-1.9.8.jar:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92) [eureka-client-1.9.8.jar:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:120) [eureka-client-1.9.8.jar:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89) [eureka-client-1.9.8.jar:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92) [eureka-client-1.9.8.jar:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77) [eureka-client-1.9.8.jar:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89) [eureka-client-1.9.8.jar:1.9.8]
+	at com.netflix.discovery.DiscoveryClient.renew(DiscoveryClient.java:846) [eureka-client-1.9.8.jar:1.9.8]
+	at com.netflix.discovery.DiscoveryClient$HeartbeatThread.run(DiscoveryClient.java:1405) [eureka-client-1.9.8.jar:1.9.8]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source) [na:1.8.0_241]
+	at java.util.concurrent.FutureTask.run(Unknown Source) [na:1.8.0_241]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source) [na:1.8.0_241]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source) [na:1.8.0_241]
+	at java.lang.Thread.run(Unknown Source) [na:1.8.0_241]
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method) ~[na:1.8.0_241]
+	at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source) ~[na:1.8.0_241]
+	at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source) ~[na:1.8.0_241]
+	at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source) ~[na:1.8.0_241]
+	at java.net.AbstractPlainSocketImpl.connect(Unknown Source) ~[na:1.8.0_241]
+	at java.net.PlainSocketImpl.connect(Unknown Source) ~[na:1.8.0_241]
+	at java.net.SocksSocketImpl.connect(Unknown Source) ~[na:1.8.0_241]
+	at java.net.Socket.connect(Unknown Source) ~[na:1.8.0_241]
+	at org.apache.http.conn.scheme.PlainSocketFactory.connectSocket(PlainSocketFactory.java:121) ~[httpclient-4.5.8.jar:4.5.8]
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:180) ~[httpclient-4.5.8.jar:4.5.8]
+	at org.apache.http.impl.conn.AbstractPoolEntry.open(AbstractPoolEntry.java:144) ~[httpclient-4.5.8.jar:4.5.8]
+	at org.apache.http.impl.conn.AbstractPooledConnAdapter.open(AbstractPooledConnAdapter.java:134) ~[httpclient-4.5.8.jar:4.5.8]
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:605) ~[httpclient-4.5.8.jar:4.5.8]
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:440) ~[httpclient-4.5.8.jar:4.5.8]
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:835) ~[httpclient-4.5.8.jar:4.5.8]
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:118) ~[httpclient-4.5.8.jar:4.5.8]
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56) ~[httpclient-4.5.8.jar:4.5.8]
+	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:173) ~[jersey-apache-client4-1.19.1.jar:1.19.1]
+	... 26 common frames omitted
+
+2020-03-19 23:45:17.324  WARN [servicio-zuul-server,,,] 15752 --- [DiscoveryClient-HeartbeatExecutor-0] c.n.d.s.t.d.RetryableEurekaHttpClient    : Request execution failed with message: java.net.ConnectException: Connection refused: connect
+2020-03-19 23:45:17.368 ERROR [servicio-zuul-server,,,] 15752 --- [DiscoveryClient-CacheRefreshExecutor-0] c.n.d.s.t.d.RedirectingEurekaHttpClient  : Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://localhost:8761/eureka/}
+
+com.sun.jersey.api.client.ClientHandlerException: java.net.ConnectException: Connection refused: connect
+	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:187) ~[jersey-apache-client4-1.19.1.jar:1.19.1]
+	at com.sun.jersey.api.client.filter.GZIPContentEncodingFilter.handle(GZIPContentEncodingFilter.java:123) ~[jersey-client-1.19.1.jar:1.19.1]
+	at com.netflix.discovery.EurekaIdentityHeaderFilter.handle(EurekaIdentityHeaderFilter.java:27) ~[eureka-client-1.9.8.jar:1.9.8]
+	at com.sun.jersey.api.client.Client.handle(Client.java:652) ~[jersey-client-1.19.1.jar:1.19.1]
+	at com.sun.jersey.api.client.WebResource.handle(WebResource.java:682) ~[jersey-client-1.19.1.jar:1.19.1]
+	at com.sun.jersey.api.client.WebResource.access$200(WebResource.java:74) ~[jersey-client-1.19.1.jar:1.19.1]
+	at com.sun.jersey.api.client.WebResource$Builder.get(WebResource.java:509) ~[jersey-client-1.19.1.jar:1.19.1]
+	at com.netflix.discovery.shared.transport.jersey.AbstractJerseyEurekaHttpClient.getApplicationsInternal(AbstractJerseyEurekaHttpClient.java:194) ~[eureka-client-1.9.8.jar:1.9.8]
+	at com.netflix.discovery.shared.transport.jersey.AbstractJerseyEurekaHttpClient.getDelta(AbstractJerseyEurekaHttpClient.java:170) ~[eureka-client-1.9.8.jar:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$7.execute(EurekaHttpClientDecorator.java:152) [eureka-client-1.9.8.jar:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.MetricsCollectingEurekaHttpClient.execute(MetricsCollectingEurekaHttpClient.java:73) ~[eureka-client-1.9.8.jar:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getDelta(EurekaHttpClientDecorator.java:149) [eureka-client-1.9.8.jar:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$7.execute(EurekaHttpClientDecorator.java:152) [eureka-client-1.9.8.jar:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:89) ~[eureka-client-1.9.8.jar:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getDelta(EurekaHttpClientDecorator.java:149) [eureka-client-1.9.8.jar:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$7.execute(EurekaHttpClientDecorator.java:152) [eureka-client-1.9.8.jar:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:120) [eureka-client-1.9.8.jar:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getDelta(EurekaHttpClientDecorator.java:149) [eureka-client-1.9.8.jar:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$7.execute(EurekaHttpClientDecorator.java:152) [eureka-client-1.9.8.jar:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77) [eureka-client-1.9.8.jar:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getDelta(EurekaHttpClientDecorator.java:149) [eureka-client-1.9.8.jar:1.9.8]
+	at com.netflix.discovery.DiscoveryClient.getAndUpdateDelta(DiscoveryClient.java:1085) [eureka-client-1.9.8.jar:1.9.8]
+	at com.netflix.discovery.DiscoveryClient.fetchRegistry(DiscoveryClient.java:967) [eureka-client-1.9.8.jar:1.9.8]
+	at com.netflix.discovery.DiscoveryClient.refreshRegistry(DiscoveryClient.java:1479) [eureka-client-1.9.8.jar:1.9.8]
+	at com.netflix.discovery.DiscoveryClient$CacheRefreshThread.run(DiscoveryClient.java:1446) [eureka-client-1.9.8.jar:1.9.8]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source) [na:1.8.0_241]
+	at java.util.concurrent.FutureTask.run(Unknown Source) [na:1.8.0_241]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source) [na:1.8.0_241]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source) [na:1.8.0_241]
+	at java.lang.Thread.run(Unknown Source) [na:1.8.0_241]
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method) ~[na:1.8.0_241]
+	at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source) ~[na:1.8.0_241]
+	at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source) ~[na:1.8.0_241]
+	at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source) ~[na:1.8.0_241]
+	at java.net.AbstractPlainSocketImpl.connect(Unknown Source) ~[na:1.8.0_241]
+	at java.net.PlainSocketImpl.connect(Unknown Source) ~[na:1.8.0_241]
+	at java.net.SocksSocketImpl.connect(Unknown Source) ~[na:1.8.0_241]
+	at java.net.Socket.connect(Unknown Source) ~[na:1.8.0_241]
+	at org.apache.http.conn.scheme.PlainSocketFactory.connectSocket(PlainSocketFactory.java:121) ~[httpclient-4.5.8.jar:4.5.8]
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:180) ~[httpclient-4.5.8.jar:4.5.8]
+	at org.apache.http.impl.conn.AbstractPoolEntry.open(AbstractPoolEntry.java:144) ~[httpclient-4.5.8.jar:4.5.8]
+	at org.apache.http.impl.conn.AbstractPooledConnAdapter.open(AbstractPooledConnAdapter.java:134) ~[httpclient-4.5.8.jar:4.5.8]
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:605) ~[httpclient-4.5.8.jar:4.5.8]
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:440) ~[httpclient-4.5.8.jar:4.5.8]
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:835) ~[httpclient-4.5.8.jar:4.5.8]
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:118) ~[httpclient-4.5.8.jar:4.5.8]
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56) ~[httpclient-4.5.8.jar:4.5.8]
+	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:173) ~[jersey-apache-client4-1.19.1.jar:1.19.1]
+	... 29 common frames omitted
+
+2020-03-19 23:45:17.369  WARN [servicio-zuul-server,,,] 15752 --- [DiscoveryClient-CacheRefreshExecutor-0] c.n.d.s.t.d.RetryableEurekaHttpClient    : Request execution failed with message: java.net.ConnectException: Connection refused: connect
+2020-03-19 23:45:21.350 ERROR [servicio-zuul-server,,,] 15752 --- [DiscoveryClient-HeartbeatExecutor-0] c.n.d.s.t.d.RedirectingEurekaHttpClient  : Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://localhost:8761/eureka/}
+
+com.sun.jersey.api.client.ClientHandlerException: java.net.ConnectException: Connection refused: connect
+	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:187) ~[jersey-apache-client4-1.19.1.jar:1.19.1]
+	at com.sun.jersey.api.client.filter.GZIPContentEncodingFilter.handle(GZIPContentEncodingFilter.java:123) ~[jersey-client-1.19.1.jar:1.19.1]
+	at com.netflix.discovery.EurekaIdentityHeaderFilter.handle(EurekaIdentityHeaderFilter.java:27) ~[eureka-client-1.9.8.jar:1.9.8]
+	at com.sun.jersey.api.client.Client.handle(Client.java:652) ~[jersey-client-1.19.1.jar:1.19.1]
+	at com.sun.jersey.api.client.WebResource.handle(WebResource.java:682) ~[jersey-client-1.19.1.jar:1.19.1]
+	at com.sun.jersey.api.client.WebResource.access$200(WebResource.java:74) ~[jersey-client-1.19.1.jar:1.19.1]
+	at com.sun.jersey.api.client.WebResource$Builder.put(WebResource.java:529) ~[jersey-client-1.19.1.jar:1.19.1]
+	at com.netflix.discovery.shared.transport.jersey.AbstractJerseyEurekaHttpClient.sendHeartBeat(AbstractJerseyEurekaHttpClient.java:102) ~[eureka-client-1.9.8.jar:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92) [eureka-client-1.9.8.jar:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.MetricsCollectingEurekaHttpClient.execute(MetricsCollectingEurekaHttpClient.java:73) ~[eureka-client-1.9.8.jar:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89) [eureka-client-1.9.8.jar:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92) [eureka-client-1.9.8.jar:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.executeOnNewServer(RedirectingEurekaHttpClient.java:118) ~[eureka-client-1.9.8.jar:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:79) ~[eureka-client-1.9.8.jar:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89) [eureka-client-1.9.8.jar:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92) [eureka-client-1.9.8.jar:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:120) [eureka-client-1.9.8.jar:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89) [eureka-client-1.9.8.jar:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92) [eureka-client-1.9.8.jar:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77) [eureka-client-1.9.8.jar:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89) [eureka-client-1.9.8.jar:1.9.8]
+	at com.netflix.discovery.DiscoveryClient.renew(DiscoveryClient.java:846) [eureka-client-1.9.8.jar:1.9.8]
+	at com.netflix.discovery.DiscoveryClient$HeartbeatThread.run(DiscoveryClient.java:1405) [eureka-client-1.9.8.jar:1.9.8]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source) [na:1.8.0_241]
+	at java.util.concurrent.FutureTask.run(Unknown Source) [na:1.8.0_241]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source) [na:1.8.0_241]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source) [na:1.8.0_241]
+	at java.lang.Thread.run(Unknown Source) [na:1.8.0_241]
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method) ~[na:1.8.0_241]
+	at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source) ~[na:1.8.0_241]
+	at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source) ~[na:1.8.0_241]
+	at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source) ~[na:1.8.0_241]
+	at java.net.AbstractPlainSocketImpl.connect(Unknown Source) ~[na:1.8.0_241]
+	at java.net.PlainSocketImpl.connect(Unknown Source) ~[na:1.8.0_241]
+	at java.net.SocksSocketImpl.connect(Unknown Source) ~[na:1.8.0_241]
+	at java.net.Socket.connect(Unknown Source) ~[na:1.8.0_241]
+	at org.apache.http.conn.scheme.PlainSocketFactory.connectSocket(PlainSocketFactory.java:121) ~[httpclient-4.5.8.jar:4.5.8]
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:180) ~[httpclient-4.5.8.jar:4.5.8]
+	at org.apache.http.impl.conn.AbstractPoolEntry.open(AbstractPoolEntry.java:144) ~[httpclient-4.5.8.jar:4.5.8]
+	at org.apache.http.impl.conn.AbstractPooledConnAdapter.open(AbstractPooledConnAdapter.java:134) ~[httpclient-4.5.8.jar:4.5.8]
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:605) ~[httpclient-4.5.8.jar:4.5.8]
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:440) ~[httpclient-4.5.8.jar:4.5.8]
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:835) ~[httpclient-4.5.8.jar:4.5.8]
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:118) ~[httpclient-4.5.8.jar:4.5.8]
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56) ~[httpclient-4.5.8.jar:4.5.8]
+	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:173) ~[jersey-apache-client4-1.19.1.jar:1.19.1]
+	... 27 common frames omitted
+
+2020-03-19 23:45:21.352  WARN [servicio-zuul-server,,,] 15752 --- [DiscoveryClient-HeartbeatExecutor-0] c.n.d.s.t.d.RetryableEurekaHttpClient    : Request execution failed with message: java.net.ConnectException: Connection refused: connect
+2020-03-19 23:45:21.353 ERROR [servicio-zuul-server,,,] 15752 --- [DiscoveryClient-HeartbeatExecutor-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_SERVICIO-ZUUL-SERVER/DESKTOP-9CSVTN3.mshome.net:servicio-zuul-server:8090 - was unable to send heartbeat!
+
+com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112) ~[eureka-client-1.9.8.jar:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89) ~[eureka-client-1.9.8.jar:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92) ~[eureka-client-1.9.8.jar:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77) ~[eureka-client-1.9.8.jar:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89) ~[eureka-client-1.9.8.jar:1.9.8]
+	at com.netflix.discovery.DiscoveryClient.renew(DiscoveryClient.java:846) ~[eureka-client-1.9.8.jar:1.9.8]
+	at com.netflix.discovery.DiscoveryClient$HeartbeatThread.run(DiscoveryClient.java:1405) [eureka-client-1.9.8.jar:1.9.8]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source) [na:1.8.0_241]
+	at java.util.concurrent.FutureTask.run(Unknown Source) [na:1.8.0_241]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source) [na:1.8.0_241]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source) [na:1.8.0_241]
+	at java.lang.Thread.run(Unknown Source) [na:1.8.0_241]
+
+2020-03-19 23:45:21.382 ERROR [servicio-zuul-server,,,] 15752 --- [DiscoveryClient-CacheRefreshExecutor-0] c.n.d.s.t.d.RedirectingEurekaHttpClient  : Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://localhost:8761/eureka/}
+
+com.sun.jersey.api.client.ClientHandlerException: java.net.ConnectException: Connection refused: connect
+	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:187) ~[jersey-apache-client4-1.19.1.jar:1.19.1]
+	at com.sun.jersey.api.client.filter.GZIPContentEncodingFilter.handle(GZIPContentEncodingFilter.java:123) ~[jersey-client-1.19.1.jar:1.19.1]
+	at com.netflix.discovery.EurekaIdentityHeaderFilter.handle(EurekaIdentityHeaderFilter.java:27) ~[eureka-client-1.9.8.jar:1.9.8]
+	at com.sun.jersey.api.client.Client.handle(Client.java:652) ~[jersey-client-1.19.1.jar:1.19.1]
+	at com.sun.jersey.api.client.WebResource.handle(WebResource.java:682) ~[jersey-client-1.19.1.jar:1.19.1]
+	at com.sun.jersey.api.client.WebResource.access$200(WebResource.java:74) ~[jersey-client-1.19.1.jar:1.19.1]
+	at com.sun.jersey.api.client.WebResource$Builder.get(WebResource.java:509) ~[jersey-client-1.19.1.jar:1.19.1]
+	at com.netflix.discovery.shared.transport.jersey.AbstractJerseyEurekaHttpClient.getApplicationsInternal(AbstractJerseyEurekaHttpClient.java:194) ~[eureka-client-1.9.8.jar:1.9.8]
+	at com.netflix.discovery.shared.transport.jersey.AbstractJerseyEurekaHttpClient.getDelta(AbstractJerseyEurekaHttpClient.java:170) ~[eureka-client-1.9.8.jar:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$7.execute(EurekaHttpClientDecorator.java:152) [eureka-client-1.9.8.jar:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.MetricsCollectingEurekaHttpClient.execute(MetricsCollectingEurekaHttpClient.java:73) ~[eureka-client-1.9.8.jar:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getDelta(EurekaHttpClientDecorator.java:149) [eureka-client-1.9.8.jar:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$7.execute(EurekaHttpClientDecorator.java:152) [eureka-client-1.9.8.jar:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.executeOnNewServer(RedirectingEurekaHttpClient.java:118) ~[eureka-client-1.9.8.jar:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:79) ~[eureka-client-1.9.8.jar:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getDelta(EurekaHttpClientDecorator.java:149) [eureka-client-1.9.8.jar:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$7.execute(EurekaHttpClientDecorator.java:152) [eureka-client-1.9.8.jar:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:120) [eureka-client-1.9.8.jar:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getDelta(EurekaHttpClientDecorator.java:149) [eureka-client-1.9.8.jar:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$7.execute(EurekaHttpClientDecorator.java:152) [eureka-client-1.9.8.jar:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77) [eureka-client-1.9.8.jar:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getDelta(EurekaHttpClientDecorator.java:149) [eureka-client-1.9.8.jar:1.9.8]
+	at com.netflix.discovery.DiscoveryClient.getAndUpdateDelta(DiscoveryClient.java:1085) [eureka-client-1.9.8.jar:1.9.8]
+	at com.netflix.discovery.DiscoveryClient.fetchRegistry(DiscoveryClient.java:967) [eureka-client-1.9.8.jar:1.9.8]
+	at com.netflix.discovery.DiscoveryClient.refreshRegistry(DiscoveryClient.java:1479) [eureka-client-1.9.8.jar:1.9.8]
+	at com.netflix.discovery.DiscoveryClient$CacheRefreshThread.run(DiscoveryClient.java:1446) [eureka-client-1.9.8.jar:1.9.8]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source) [na:1.8.0_241]
+	at java.util.concurrent.FutureTask.run(Unknown Source) [na:1.8.0_241]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source) [na:1.8.0_241]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source) [na:1.8.0_241]
+	at java.lang.Thread.run(Unknown Source) [na:1.8.0_241]
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method) ~[na:1.8.0_241]
+	at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source) ~[na:1.8.0_241]
+	at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source) ~[na:1.8.0_241]
+	at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source) ~[na:1.8.0_241]
+	at java.net.AbstractPlainSocketImpl.connect(Unknown Source) ~[na:1.8.0_241]
+	at java.net.PlainSocketImpl.connect(Unknown Source) ~[na:1.8.0_241]
+	at java.net.SocksSocketImpl.connect(Unknown Source) ~[na:1.8.0_241]
+	at java.net.Socket.connect(Unknown Source) ~[na:1.8.0_241]
+	at org.apache.http.conn.scheme.PlainSocketFactory.connectSocket(PlainSocketFactory.java:121) ~[httpclient-4.5.8.jar:4.5.8]
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:180) ~[httpclient-4.5.8.jar:4.5.8]
+	at org.apache.http.impl.conn.AbstractPoolEntry.open(AbstractPoolEntry.java:144) ~[httpclient-4.5.8.jar:4.5.8]
+	at org.apache.http.impl.conn.AbstractPooledConnAdapter.open(AbstractPooledConnAdapter.java:134) ~[httpclient-4.5.8.jar:4.5.8]
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:605) ~[httpclient-4.5.8.jar:4.5.8]
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:440) ~[httpclient-4.5.8.jar:4.5.8]
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:835) ~[httpclient-4.5.8.jar:4.5.8]
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:118) ~[httpclient-4.5.8.jar:4.5.8]
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56) ~[httpclient-4.5.8.jar:4.5.8]
+	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:173) ~[jersey-apache-client4-1.19.1.jar:1.19.1]
+	... 30 common frames omitted
+
+2020-03-19 23:45:21.383  WARN [servicio-zuul-server,,,] 15752 --- [DiscoveryClient-CacheRefreshExecutor-0] c.n.d.s.t.d.RetryableEurekaHttpClient    : Request execution failed with message: java.net.ConnectException: Connection refused: connect
+2020-03-19 23:45:21.383 ERROR [servicio-zuul-server,,,] 15752 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_SERVICIO-ZUUL-SERVER/DESKTOP-9CSVTN3.mshome.net:servicio-zuul-server:8090 - was unable to refresh its cache! status = Cannot execute request on any known server
+
+com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112) ~[eureka-client-1.9.8.jar:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getDelta(EurekaHttpClientDecorator.java:149) ~[eureka-client-1.9.8.jar:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$7.execute(EurekaHttpClientDecorator.java:152) ~[eureka-client-1.9.8.jar:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77) ~[eureka-client-1.9.8.jar:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getDelta(EurekaHttpClientDecorator.java:149) ~[eureka-client-1.9.8.jar:1.9.8]
+	at com.netflix.discovery.DiscoveryClient.getAndUpdateDelta(DiscoveryClient.java:1085) [eureka-client-1.9.8.jar:1.9.8]
+	at com.netflix.discovery.DiscoveryClient.fetchRegistry(DiscoveryClient.java:967) [eureka-client-1.9.8.jar:1.9.8]
+	at com.netflix.discovery.DiscoveryClient.refreshRegistry(DiscoveryClient.java:1479) [eureka-client-1.9.8.jar:1.9.8]
+	at com.netflix.discovery.DiscoveryClient$CacheRefreshThread.run(DiscoveryClient.java:1446) [eureka-client-1.9.8.jar:1.9.8]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source) [na:1.8.0_241]
+	at java.util.concurrent.FutureTask.run(Unknown Source) [na:1.8.0_241]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source) [na:1.8.0_241]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source) [na:1.8.0_241]
+	at java.lang.Thread.run(Unknown Source) [na:1.8.0_241]
+
+2020-03-19 23:45:55.381 ERROR [servicio-zuul-server,,,] 15752 --- [DiscoveryClient-HeartbeatExecutor-0] c.n.d.s.t.d.RedirectingEurekaHttpClient  : Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://localhost:8761/eureka/}
+
+com.sun.jersey.api.client.ClientHandlerException: java.net.ConnectException: Connection refused: connect
+	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:187) ~[jersey-apache-client4-1.19.1.jar:1.19.1]
+	at com.sun.jersey.api.client.filter.GZIPContentEncodingFilter.handle(GZIPContentEncodingFilter.java:123) ~[jersey-client-1.19.1.jar:1.19.1]
+	at com.netflix.discovery.EurekaIdentityHeaderFilter.handle(EurekaIdentityHeaderFilter.java:27) ~[eureka-client-1.9.8.jar:1.9.8]
+	at com.sun.jersey.api.client.Client.handle(Client.java:652) ~[jersey-client-1.19.1.jar:1.19.1]
+	at com.sun.jersey.api.client.WebResource.handle(WebResource.java:682) ~[jersey-client-1.19.1.jar:1.19.1]
+	at com.sun.jersey.api.client.WebResource.access$200(WebResource.java:74) ~[jersey-client-1.19.1.jar:1.19.1]
+	at com.sun.jersey.api.client.WebResource$Builder.put(WebResource.java:529) ~[jersey-client-1.19.1.jar:1.19.1]
+	at com.netflix.discovery.shared.transport.jersey.AbstractJerseyEurekaHttpClient.sendHeartBeat(AbstractJerseyEurekaHttpClient.java:102) ~[eureka-client-1.9.8.jar:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92) [eureka-client-1.9.8.jar:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.MetricsCollectingEurekaHttpClient.execute(MetricsCollectingEurekaHttpClient.java:73) ~[eureka-client-1.9.8.jar:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89) [eureka-client-1.9.8.jar:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92) [eureka-client-1.9.8.jar:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.executeOnNewServer(RedirectingEurekaHttpClient.java:118) ~[eureka-client-1.9.8.jar:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:79) ~[eureka-client-1.9.8.jar:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89) [eureka-client-1.9.8.jar:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92) [eureka-client-1.9.8.jar:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:120) [eureka-client-1.9.8.jar:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89) [eureka-client-1.9.8.jar:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92) [eureka-client-1.9.8.jar:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77) [eureka-client-1.9.8.jar:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89) [eureka-client-1.9.8.jar:1.9.8]
+	at com.netflix.discovery.DiscoveryClient.renew(DiscoveryClient.java:846) [eureka-client-1.9.8.jar:1.9.8]
+	at com.netflix.discovery.DiscoveryClient$HeartbeatThread.run(DiscoveryClient.java:1405) [eureka-client-1.9.8.jar:1.9.8]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source) [na:1.8.0_241]
+	at java.util.concurrent.FutureTask.run(Unknown Source) [na:1.8.0_241]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source) [na:1.8.0_241]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source) [na:1.8.0_241]
+	at java.lang.Thread.run(Unknown Source) [na:1.8.0_241]
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method) ~[na:1.8.0_241]
+	at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source) ~[na:1.8.0_241]
+	at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source) ~[na:1.8.0_241]
+	at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source) ~[na:1.8.0_241]
+	at java.net.AbstractPlainSocketImpl.connect(Unknown Source) ~[na:1.8.0_241]
+	at java.net.PlainSocketImpl.connect(Unknown Source) ~[na:1.8.0_241]
+	at java.net.SocksSocketImpl.connect(Unknown Source) ~[na:1.8.0_241]
+	at java.net.Socket.connect(Unknown Source) ~[na:1.8.0_241]
+	at org.apache.http.conn.scheme.PlainSocketFactory.connectSocket(PlainSocketFactory.java:121) ~[httpclient-4.5.8.jar:4.5.8]
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:180) ~[httpclient-4.5.8.jar:4.5.8]
+	at org.apache.http.impl.conn.AbstractPoolEntry.open(AbstractPoolEntry.java:144) ~[httpclient-4.5.8.jar:4.5.8]
+	at org.apache.http.impl.conn.AbstractPooledConnAdapter.open(AbstractPooledConnAdapter.java:134) ~[httpclient-4.5.8.jar:4.5.8]
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:605) ~[httpclient-4.5.8.jar:4.5.8]
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:440) ~[httpclient-4.5.8.jar:4.5.8]
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:835) ~[httpclient-4.5.8.jar:4.5.8]
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:118) ~[httpclient-4.5.8.jar:4.5.8]
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56) ~[httpclient-4.5.8.jar:4.5.8]
+	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:173) ~[jersey-apache-client4-1.19.1.jar:1.19.1]
+	... 27 common frames omitted
+
+2020-03-19 23:45:55.382  WARN [servicio-zuul-server,,,] 15752 --- [DiscoveryClient-HeartbeatExecutor-0] c.n.d.s.t.d.RetryableEurekaHttpClient    : Request execution failed with message: java.net.ConnectException: Connection refused: connect
+2020-03-19 23:45:55.382 ERROR [servicio-zuul-server,,,] 15752 --- [DiscoveryClient-HeartbeatExecutor-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_SERVICIO-ZUUL-SERVER/DESKTOP-9CSVTN3.mshome.net:servicio-zuul-server:8090 - was unable to send heartbeat!
+
+com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112) ~[eureka-client-1.9.8.jar:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89) ~[eureka-client-1.9.8.jar:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92) ~[eureka-client-1.9.8.jar:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77) ~[eureka-client-1.9.8.jar:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89) ~[eureka-client-1.9.8.jar:1.9.8]
+	at com.netflix.discovery.DiscoveryClient.renew(DiscoveryClient.java:846) ~[eureka-client-1.9.8.jar:1.9.8]
+	at com.netflix.discovery.DiscoveryClient$HeartbeatThread.run(DiscoveryClient.java:1405) [eureka-client-1.9.8.jar:1.9.8]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source) [na:1.8.0_241]
+	at java.util.concurrent.FutureTask.run(Unknown Source) [na:1.8.0_241]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source) [na:1.8.0_241]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source) [na:1.8.0_241]
+	at java.lang.Thread.run(Unknown Source) [na:1.8.0_241]
+
+2020-03-19 23:45:55.410 ERROR [servicio-zuul-server,,,] 15752 --- [DiscoveryClient-CacheRefreshExecutor-0] c.n.d.s.t.d.RedirectingEurekaHttpClient  : Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://localhost:8761/eureka/}
+
+com.sun.jersey.api.client.ClientHandlerException: java.net.ConnectException: Connection refused: connect
+	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:187) ~[jersey-apache-client4-1.19.1.jar:1.19.1]
+	at com.sun.jersey.api.client.filter.GZIPContentEncodingFilter.handle(GZIPContentEncodingFilter.java:123) ~[jersey-client-1.19.1.jar:1.19.1]
+	at com.netflix.discovery.EurekaIdentityHeaderFilter.handle(EurekaIdentityHeaderFilter.java:27) ~[eureka-client-1.9.8.jar:1.9.8]
+	at com.sun.jersey.api.client.Client.handle(Client.java:652) ~[jersey-client-1.19.1.jar:1.19.1]
+	at com.sun.jersey.api.client.WebResource.handle(WebResource.java:682) ~[jersey-client-1.19.1.jar:1.19.1]
+	at com.sun.jersey.api.client.WebResource.access$200(WebResource.java:74) ~[jersey-client-1.19.1.jar:1.19.1]
+	at com.sun.jersey.api.client.WebResource$Builder.get(WebResource.java:509) ~[jersey-client-1.19.1.jar:1.19.1]
+	at com.netflix.discovery.shared.transport.jersey.AbstractJerseyEurekaHttpClient.getApplicationsInternal(AbstractJerseyEurekaHttpClient.java:194) ~[eureka-client-1.9.8.jar:1.9.8]
+	at com.netflix.discovery.shared.transport.jersey.AbstractJerseyEurekaHttpClient.getDelta(AbstractJerseyEurekaHttpClient.java:170) ~[eureka-client-1.9.8.jar:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$7.execute(EurekaHttpClientDecorator.java:152) [eureka-client-1.9.8.jar:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.MetricsCollectingEurekaHttpClient.execute(MetricsCollectingEurekaHttpClient.java:73) ~[eureka-client-1.9.8.jar:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getDelta(EurekaHttpClientDecorator.java:149) [eureka-client-1.9.8.jar:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$7.execute(EurekaHttpClientDecorator.java:152) [eureka-client-1.9.8.jar:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.executeOnNewServer(RedirectingEurekaHttpClient.java:118) ~[eureka-client-1.9.8.jar:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:79) ~[eureka-client-1.9.8.jar:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getDelta(EurekaHttpClientDecorator.java:149) [eureka-client-1.9.8.jar:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$7.execute(EurekaHttpClientDecorator.java:152) [eureka-client-1.9.8.jar:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:120) [eureka-client-1.9.8.jar:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getDelta(EurekaHttpClientDecorator.java:149) [eureka-client-1.9.8.jar:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$7.execute(EurekaHttpClientDecorator.java:152) [eureka-client-1.9.8.jar:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77) [eureka-client-1.9.8.jar:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getDelta(EurekaHttpClientDecorator.java:149) [eureka-client-1.9.8.jar:1.9.8]
+	at com.netflix.discovery.DiscoveryClient.getAndUpdateDelta(DiscoveryClient.java:1085) [eureka-client-1.9.8.jar:1.9.8]
+	at com.netflix.discovery.DiscoveryClient.fetchRegistry(DiscoveryClient.java:967) [eureka-client-1.9.8.jar:1.9.8]
+	at com.netflix.discovery.DiscoveryClient.refreshRegistry(DiscoveryClient.java:1479) [eureka-client-1.9.8.jar:1.9.8]
+	at com.netflix.discovery.DiscoveryClient$CacheRefreshThread.run(DiscoveryClient.java:1446) [eureka-client-1.9.8.jar:1.9.8]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source) [na:1.8.0_241]
+	at java.util.concurrent.FutureTask.run(Unknown Source) [na:1.8.0_241]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source) [na:1.8.0_241]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source) [na:1.8.0_241]
+	at java.lang.Thread.run(Unknown Source) [na:1.8.0_241]
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method) ~[na:1.8.0_241]
+	at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source) ~[na:1.8.0_241]
+	at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source) ~[na:1.8.0_241]
+	at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source) ~[na:1.8.0_241]
+	at java.net.AbstractPlainSocketImpl.connect(Unknown Source) ~[na:1.8.0_241]
+	at java.net.PlainSocketImpl.connect(Unknown Source) ~[na:1.8.0_241]
+	at java.net.SocksSocketImpl.connect(Unknown Source) ~[na:1.8.0_241]
+	at java.net.Socket.connect(Unknown Source) ~[na:1.8.0_241]
+	at org.apache.http.conn.scheme.PlainSocketFactory.connectSocket(PlainSocketFactory.java:121) ~[httpclient-4.5.8.jar:4.5.8]
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:180) ~[httpclient-4.5.8.jar:4.5.8]
+	at org.apache.http.impl.conn.AbstractPoolEntry.open(AbstractPoolEntry.java:144) ~[httpclient-4.5.8.jar:4.5.8]
+	at org.apache.http.impl.conn.AbstractPooledConnAdapter.open(AbstractPooledConnAdapter.java:134) ~[httpclient-4.5.8.jar:4.5.8]
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:605) ~[httpclient-4.5.8.jar:4.5.8]
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:440) ~[httpclient-4.5.8.jar:4.5.8]
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:835) ~[httpclient-4.5.8.jar:4.5.8]
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:118) ~[httpclient-4.5.8.jar:4.5.8]
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56) ~[httpclient-4.5.8.jar:4.5.8]
+	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:173) ~[jersey-apache-client4-1.19.1.jar:1.19.1]
+	... 30 common frames omitted
+
+2020-03-19 23:45:55.411  WARN [servicio-zuul-server,,,] 15752 --- [DiscoveryClient-CacheRefreshExecutor-0] c.n.d.s.t.d.RetryableEurekaHttpClient    : Request execution failed with message: java.net.ConnectException: Connection refused: connect
+2020-03-19 23:45:55.411 ERROR [servicio-zuul-server,,,] 15752 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_SERVICIO-ZUUL-SERVER/DESKTOP-9CSVTN3.mshome.net:servicio-zuul-server:8090 - was unable to refresh its cache! status = Cannot execute request on any known server
+
+com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112) ~[eureka-client-1.9.8.jar:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getDelta(EurekaHttpClientDecorator.java:149) ~[eureka-client-1.9.8.jar:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$7.execute(EurekaHttpClientDecorator.java:152) ~[eureka-client-1.9.8.jar:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77) ~[eureka-client-1.9.8.jar:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getDelta(EurekaHttpClientDecorator.java:149) ~[eureka-client-1.9.8.jar:1.9.8]
+	at com.netflix.discovery.DiscoveryClient.getAndUpdateDelta(DiscoveryClient.java:1085) [eureka-client-1.9.8.jar:1.9.8]
+	at com.netflix.discovery.DiscoveryClient.fetchRegistry(DiscoveryClient.java:967) [eureka-client-1.9.8.jar:1.9.8]
+	at com.netflix.discovery.DiscoveryClient.refreshRegistry(DiscoveryClient.java:1479) [eureka-client-1.9.8.jar:1.9.8]
+	at com.netflix.discovery.DiscoveryClient$CacheRefreshThread.run(DiscoveryClient.java:1446) [eureka-client-1.9.8.jar:1.9.8]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source) [na:1.8.0_241]
+	at java.util.concurrent.FutureTask.run(Unknown Source) [na:1.8.0_241]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source) [na:1.8.0_241]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source) [na:1.8.0_241]
+	at java.lang.Thread.run(Unknown Source) [na:1.8.0_241]
+
+2020-03-19 23:46:06.671  INFO [servicio-zuul-server,,,] 15752 --- [RMI TCP Connection(94)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2020-03-19 23:46:06.672  INFO [servicio-zuul-server,,,] 15752 --- [RMI TCP Connection(94)-127.0.0.1] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application SERVICIO-ZUUL-SERVER with eureka with status DOWN
+2020-03-19 23:46:06.673  WARN [servicio-zuul-server,,,] 15752 --- [RMI TCP Connection(94)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1584672366673, current=DOWN, previous=UP]
+2020-03-19 23:46:06.673  INFO [servicio-zuul-server,,,] 15752 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_SERVICIO-ZUUL-SERVER/DESKTOP-9CSVTN3.mshome.net:servicio-zuul-server:8090: registering service...
+2020-03-19 23:46:06.682  INFO [servicio-zuul-server,,,] 15752 --- [RMI TCP Connection(94)-127.0.0.1] o.s.c.n.zuul.ZuulFilterInitializer       : Stopping filter initializer
+2020-03-19 23:46:06.685  INFO [servicio-zuul-server,,,] 15752 --- [RMI TCP Connection(94)-127.0.0.1] c.n.u.concurrent.ShutdownEnabledTimer    : Shutdown hook removed for: NFLoadBalancer-PingTimer-servicio-oauth
+2020-03-19 23:46:06.690  INFO [servicio-zuul-server,,,] 15752 --- [RMI TCP Connection(94)-127.0.0.1] c.n.u.concurrent.ShutdownEnabledTimer    : Shutdown hook removed for: NFLoadBalancer-PingTimer-servicio-items
+2020-03-19 23:46:06.694  INFO [servicio-zuul-server,,,] 15752 --- [RMI TCP Connection(94)-127.0.0.1] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-03-19 23:46:07.713  WARN [servicio-zuul-server,,,] 15752 --- [RMI TCP Connection(94)-127.0.0.1] z.r.AsyncReporter$BoundedAsyncReporter   : Timed out waiting for in-flight spans to send
+2020-03-19 23:46:10.698 ERROR [servicio-zuul-server,,,] 15752 --- [DiscoveryClient-InstanceInfoReplicator-0] c.n.d.s.t.d.RedirectingEurekaHttpClient  : Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://localhost:8761/eureka/}
+
+com.sun.jersey.api.client.ClientHandlerException: java.net.ConnectException: Connection refused: connect
+	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:187) ~[jersey-apache-client4-1.19.1.jar:1.19.1]
+	at com.sun.jersey.api.client.filter.GZIPContentEncodingFilter.handle(GZIPContentEncodingFilter.java:123) ~[jersey-client-1.19.1.jar:1.19.1]
+	at com.netflix.discovery.EurekaIdentityHeaderFilter.handle(EurekaIdentityHeaderFilter.java:27) ~[eureka-client-1.9.8.jar:1.9.8]
+	at com.sun.jersey.api.client.Client.handle(Client.java:652) ~[jersey-client-1.19.1.jar:1.19.1]
+	at com.sun.jersey.api.client.WebResource.handle(WebResource.java:682) ~[jersey-client-1.19.1.jar:1.19.1]
+	at com.sun.jersey.api.client.WebResource.access$200(WebResource.java:74) ~[jersey-client-1.19.1.jar:1.19.1]
+	at com.sun.jersey.api.client.WebResource$Builder.post(WebResource.java:570) ~[jersey-client-1.19.1.jar:1.19.1]
+	at com.netflix.discovery.shared.transport.jersey.AbstractJerseyEurekaHttpClient.register(AbstractJerseyEurekaHttpClient.java:56) ~[eureka-client-1.9.8.jar:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59) [eureka-client-1.9.8.jar:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.MetricsCollectingEurekaHttpClient.execute(MetricsCollectingEurekaHttpClient.java:73) ~[eureka-client-1.9.8.jar:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56) [eureka-client-1.9.8.jar:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59) [eureka-client-1.9.8.jar:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.executeOnNewServer(RedirectingEurekaHttpClient.java:118) ~[eureka-client-1.9.8.jar:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:79) ~[eureka-client-1.9.8.jar:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56) [eureka-client-1.9.8.jar:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59) [eureka-client-1.9.8.jar:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:120) [eureka-client-1.9.8.jar:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56) [eureka-client-1.9.8.jar:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59) [eureka-client-1.9.8.jar:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77) [eureka-client-1.9.8.jar:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56) [eureka-client-1.9.8.jar:1.9.8]
+	at com.netflix.discovery.DiscoveryClient.register(DiscoveryClient.java:829) [eureka-client-1.9.8.jar:1.9.8]
+	at com.netflix.discovery.InstanceInfoReplicator.run(InstanceInfoReplicator.java:121) [eureka-client-1.9.8.jar:1.9.8]
+	at com.netflix.discovery.InstanceInfoReplicator$1.run(InstanceInfoReplicator.java:101) [eureka-client-1.9.8.jar:1.9.8]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source) [na:1.8.0_241]
+	at java.util.concurrent.FutureTask.run(Unknown Source) [na:1.8.0_241]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(Unknown Source) [na:1.8.0_241]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(Unknown Source) [na:1.8.0_241]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source) [na:1.8.0_241]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source) [na:1.8.0_241]
+	at java.lang.Thread.run(Unknown Source) [na:1.8.0_241]
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method) ~[na:1.8.0_241]
+	at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source) ~[na:1.8.0_241]
+	at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source) ~[na:1.8.0_241]
+	at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source) ~[na:1.8.0_241]
+	at java.net.AbstractPlainSocketImpl.connect(Unknown Source) ~[na:1.8.0_241]
+	at java.net.PlainSocketImpl.connect(Unknown Source) ~[na:1.8.0_241]
+	at java.net.SocksSocketImpl.connect(Unknown Source) ~[na:1.8.0_241]
+	at java.net.Socket.connect(Unknown Source) ~[na:1.8.0_241]
+	at org.apache.http.conn.scheme.PlainSocketFactory.connectSocket(PlainSocketFactory.java:121) ~[httpclient-4.5.8.jar:4.5.8]
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:180) ~[httpclient-4.5.8.jar:4.5.8]
+	at org.apache.http.impl.conn.AbstractPoolEntry.open(AbstractPoolEntry.java:144) ~[httpclient-4.5.8.jar:4.5.8]
+	at org.apache.http.impl.conn.AbstractPooledConnAdapter.open(AbstractPooledConnAdapter.java:134) ~[httpclient-4.5.8.jar:4.5.8]
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:605) ~[httpclient-4.5.8.jar:4.5.8]
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:440) ~[httpclient-4.5.8.jar:4.5.8]
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:835) ~[httpclient-4.5.8.jar:4.5.8]
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:118) ~[httpclient-4.5.8.jar:4.5.8]
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56) ~[httpclient-4.5.8.jar:4.5.8]
+	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:173) ~[jersey-apache-client4-1.19.1.jar:1.19.1]
+	... 30 common frames omitted
+
+2020-03-19 23:46:10.699  WARN [servicio-zuul-server,,,] 15752 --- [DiscoveryClient-InstanceInfoReplicator-0] c.n.d.s.t.d.RetryableEurekaHttpClient    : Request execution failed with message: java.net.ConnectException: Connection refused: connect
+2020-03-19 23:46:10.700  WARN [servicio-zuul-server,,,] 15752 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_SERVICIO-ZUUL-SERVER/DESKTOP-9CSVTN3.mshome.net:servicio-zuul-server:8090 - registration failed Cannot execute request on any known server
+
+com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112) ~[eureka-client-1.9.8.jar:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56) ~[eureka-client-1.9.8.jar:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59) ~[eureka-client-1.9.8.jar:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77) ~[eureka-client-1.9.8.jar:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56) ~[eureka-client-1.9.8.jar:1.9.8]
+	at com.netflix.discovery.DiscoveryClient.register(DiscoveryClient.java:829) ~[eureka-client-1.9.8.jar:1.9.8]
+	at com.netflix.discovery.InstanceInfoReplicator.run(InstanceInfoReplicator.java:121) [eureka-client-1.9.8.jar:1.9.8]
+	at com.netflix.discovery.InstanceInfoReplicator$1.run(InstanceInfoReplicator.java:101) [eureka-client-1.9.8.jar:1.9.8]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source) [na:1.8.0_241]
+	at java.util.concurrent.FutureTask.run(Unknown Source) [na:1.8.0_241]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(Unknown Source) [na:1.8.0_241]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(Unknown Source) [na:1.8.0_241]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source) [na:1.8.0_241]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source) [na:1.8.0_241]
+	at java.lang.Thread.run(Unknown Source) [na:1.8.0_241]
+
+2020-03-19 23:46:10.700  WARN [servicio-zuul-server,,,] 15752 --- [DiscoveryClient-InstanceInfoReplicator-0] c.n.discovery.InstanceInfoReplicator     : There was a problem with the instance info replicator
+
+com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112) ~[eureka-client-1.9.8.jar:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56) ~[eureka-client-1.9.8.jar:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59) ~[eureka-client-1.9.8.jar:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77) ~[eureka-client-1.9.8.jar:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56) ~[eureka-client-1.9.8.jar:1.9.8]
+	at com.netflix.discovery.DiscoveryClient.register(DiscoveryClient.java:829) ~[eureka-client-1.9.8.jar:1.9.8]
+	at com.netflix.discovery.InstanceInfoReplicator.run(InstanceInfoReplicator.java:121) ~[eureka-client-1.9.8.jar:1.9.8]
+	at com.netflix.discovery.InstanceInfoReplicator$1.run(InstanceInfoReplicator.java:101) [eureka-client-1.9.8.jar:1.9.8]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source) [na:1.8.0_241]
+	at java.util.concurrent.FutureTask.run(Unknown Source) [na:1.8.0_241]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(Unknown Source) [na:1.8.0_241]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(Unknown Source) [na:1.8.0_241]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source) [na:1.8.0_241]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source) [na:1.8.0_241]
+	at java.lang.Thread.run(Unknown Source) [na:1.8.0_241]
+
+2020-03-19 23:46:11.719  INFO [servicio-zuul-server,,,] 15752 --- [RMI TCP Connection(94)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2020-03-19 23:46:14.721  INFO [servicio-zuul-server,,,] 15752 --- [RMI TCP Connection(94)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2020-03-19 23:46:18.754 ERROR [servicio-zuul-server,,,] 15752 --- [RMI TCP Connection(94)-127.0.0.1] c.n.d.s.t.d.RedirectingEurekaHttpClient  : Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://localhost:8761/eureka/}
+
+com.sun.jersey.api.client.ClientHandlerException: java.net.ConnectException: Connection refused: connect
+	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:187) ~[jersey-apache-client4-1.19.1.jar:1.19.1]
+	at com.sun.jersey.api.client.filter.GZIPContentEncodingFilter.handle(GZIPContentEncodingFilter.java:123) ~[jersey-client-1.19.1.jar:1.19.1]
+	at com.netflix.discovery.EurekaIdentityHeaderFilter.handle(EurekaIdentityHeaderFilter.java:27) ~[eureka-client-1.9.8.jar:1.9.8]
+	at com.sun.jersey.api.client.Client.handle(Client.java:652) ~[jersey-client-1.19.1.jar:1.19.1]
+	at com.sun.jersey.api.client.WebResource.handle(WebResource.java:682) ~[jersey-client-1.19.1.jar:1.19.1]
+	at com.sun.jersey.api.client.WebResource.access$200(WebResource.java:74) ~[jersey-client-1.19.1.jar:1.19.1]
+	at com.sun.jersey.api.client.WebResource$Builder.delete(WebResource.java:591) ~[jersey-client-1.19.1.jar:1.19.1]
+	at com.netflix.discovery.shared.transport.jersey.AbstractJerseyEurekaHttpClient.cancel(AbstractJerseyEurekaHttpClient.java:76) ~[eureka-client-1.9.8.jar:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$2.execute(EurekaHttpClientDecorator.java:74) [eureka-client-1.9.8.jar:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.MetricsCollectingEurekaHttpClient.execute(MetricsCollectingEurekaHttpClient.java:73) ~[eureka-client-1.9.8.jar:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71) [eureka-client-1.9.8.jar:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$2.execute(EurekaHttpClientDecorator.java:74) [eureka-client-1.9.8.jar:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.executeOnNewServer(RedirectingEurekaHttpClient.java:118) ~[eureka-client-1.9.8.jar:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:79) ~[eureka-client-1.9.8.jar:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71) [eureka-client-1.9.8.jar:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$2.execute(EurekaHttpClientDecorator.java:74) [eureka-client-1.9.8.jar:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:120) [eureka-client-1.9.8.jar:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71) [eureka-client-1.9.8.jar:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$2.execute(EurekaHttpClientDecorator.java:74) [eureka-client-1.9.8.jar:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77) [eureka-client-1.9.8.jar:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71) [eureka-client-1.9.8.jar:1.9.8]
+	at com.netflix.discovery.DiscoveryClient.unregister(DiscoveryClient.java:923) [eureka-client-1.9.8.jar:1.9.8]
+	at com.netflix.discovery.DiscoveryClient.shutdown(DiscoveryClient.java:901) [eureka-client-1.9.8.jar:1.9.8]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_241]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) ~[na:1.8.0_241]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[na:1.8.0_241]
+	at java.lang.reflect.Method.invoke(Unknown Source) ~[na:1.8.0_241]
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleElement.invoke(InitDestroyAnnotationBeanPostProcessor.java:363) [spring-beans-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMetadata.invokeDestroyMethods(InitDestroyAnnotationBeanPostProcessor.java:321) [spring-beans-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeDestruction(InitDestroyAnnotationBeanPostProcessor.java:156) [spring-beans-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:240) [spring-beans-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.run(DisposableBeanAdapter.java:233) [spring-beans-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.cloud.context.scope.GenericScope$BeanLifecycleWrapper.destroy(GenericScope.java:403) [spring-cloud-context-2.1.1.RELEASE.jar:2.1.1.RELEASE]
+	at org.springframework.cloud.context.scope.GenericScope.destroy(GenericScope.java:142) [spring-cloud-context-2.1.1.RELEASE.jar:2.1.1.RELEASE]
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:256) [spring-beans-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroyBean(DefaultSingletonBeanRegistry.java:571) [spring-beans-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingleton(DefaultSingletonBeanRegistry.java:543) [spring-beans-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingleton(DefaultListableBeanFactory.java:1034) [spring-beans-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingletons(DefaultSingletonBeanRegistry.java:504) [spring-beans-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingletons(DefaultListableBeanFactory.java:1027) [spring-beans-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.destroyBeans(AbstractApplicationContext.java:1057) [spring-context-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1026) [spring-context-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:975) [spring-context-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.boot.admin.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin.shutdown(SpringApplicationAdminMXBeanRegistrar.java:164) [spring-boot-2.1.5.RELEASE.jar:2.1.5.RELEASE]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_241]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) ~[na:1.8.0_241]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[na:1.8.0_241]
+	at java.lang.reflect.Method.invoke(Unknown Source) ~[na:1.8.0_241]
+	at sun.reflect.misc.Trampoline.invoke(Unknown Source) [na:1.8.0_241]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_241]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) ~[na:1.8.0_241]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[na:1.8.0_241]
+	at java.lang.reflect.Method.invoke(Unknown Source) ~[na:1.8.0_241]
+	at sun.reflect.misc.MethodUtil.invoke(Unknown Source) [na:1.8.0_241]
+	at com.sun.jmx.mbeanserver.ConvertingMethod.invokeWithOpenReturn(Unknown Source) [na:1.8.0_241]
+	at com.sun.jmx.mbeanserver.ConvertingMethod.invokeWithOpenReturn(Unknown Source) [na:1.8.0_241]
+	at com.sun.jmx.mbeanserver.MXBeanIntrospector.invokeM2(Unknown Source) [na:1.8.0_241]
+	at com.sun.jmx.mbeanserver.MXBeanIntrospector.invokeM2(Unknown Source) [na:1.8.0_241]
+	at com.sun.jmx.mbeanserver.MBeanIntrospector.invokeM(Unknown Source) [na:1.8.0_241]
+	at com.sun.jmx.mbeanserver.PerInterface.invoke(Unknown Source) [na:1.8.0_241]
+	at com.sun.jmx.mbeanserver.MBeanSupport.invoke(Unknown Source) [na:1.8.0_241]
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.invoke(Unknown Source) [na:1.8.0_241]
+	at com.sun.jmx.mbeanserver.JmxMBeanServer.invoke(Unknown Source) [na:1.8.0_241]
+	at javax.management.remote.rmi.RMIConnectionImpl.doOperation(Unknown Source) [na:1.8.0_241]
+	at javax.management.remote.rmi.RMIConnectionImpl.access$300(Unknown Source) [na:1.8.0_241]
+	at javax.management.remote.rmi.RMIConnectionImpl$PrivilegedOperation.run(Unknown Source) [na:1.8.0_241]
+	at javax.management.remote.rmi.RMIConnectionImpl.doPrivilegedOperation(Unknown Source) [na:1.8.0_241]
+	at javax.management.remote.rmi.RMIConnectionImpl.invoke(Unknown Source) [na:1.8.0_241]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_241]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) ~[na:1.8.0_241]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[na:1.8.0_241]
+	at java.lang.reflect.Method.invoke(Unknown Source) ~[na:1.8.0_241]
+	at sun.rmi.server.UnicastServerRef.dispatch(Unknown Source) [na:1.8.0_241]
+	at sun.rmi.transport.Transport$1.run(Unknown Source) [na:1.8.0_241]
+	at sun.rmi.transport.Transport$1.run(Unknown Source) [na:1.8.0_241]
+	at java.security.AccessController.doPrivileged(Native Method) [na:1.8.0_241]
+	at sun.rmi.transport.Transport.serviceCall(Unknown Source) [na:1.8.0_241]
+	at sun.rmi.transport.tcp.TCPTransport.handleMessages(Unknown Source) [na:1.8.0_241]
+	at sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run0(Unknown Source) [na:1.8.0_241]
+	at sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.lambda$run$0(Unknown Source) [na:1.8.0_241]
+	at java.security.AccessController.doPrivileged(Native Method) [na:1.8.0_241]
+	at sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run(Unknown Source) [na:1.8.0_241]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source) ~[na:1.8.0_241]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source) ~[na:1.8.0_241]
+	at java.lang.Thread.run(Unknown Source) ~[na:1.8.0_241]
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method) ~[na:1.8.0_241]
+	at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source) ~[na:1.8.0_241]
+	at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source) ~[na:1.8.0_241]
+	at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source) ~[na:1.8.0_241]
+	at java.net.AbstractPlainSocketImpl.connect(Unknown Source) ~[na:1.8.0_241]
+	at java.net.PlainSocketImpl.connect(Unknown Source) ~[na:1.8.0_241]
+	at java.net.SocksSocketImpl.connect(Unknown Source) ~[na:1.8.0_241]
+	at java.net.Socket.connect(Unknown Source) ~[na:1.8.0_241]
+	at org.apache.http.conn.scheme.PlainSocketFactory.connectSocket(PlainSocketFactory.java:121) ~[httpclient-4.5.8.jar:4.5.8]
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:180) ~[httpclient-4.5.8.jar:4.5.8]
+	at org.apache.http.impl.conn.AbstractPoolEntry.open(AbstractPoolEntry.java:144) ~[httpclient-4.5.8.jar:4.5.8]
+	at org.apache.http.impl.conn.AbstractPooledConnAdapter.open(AbstractPooledConnAdapter.java:134) ~[httpclient-4.5.8.jar:4.5.8]
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:605) ~[httpclient-4.5.8.jar:4.5.8]
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:440) ~[httpclient-4.5.8.jar:4.5.8]
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:835) ~[httpclient-4.5.8.jar:4.5.8]
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:118) ~[httpclient-4.5.8.jar:4.5.8]
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56) ~[httpclient-4.5.8.jar:4.5.8]
+	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:173) ~[jersey-apache-client4-1.19.1.jar:1.19.1]
+	... 84 common frames omitted
+
+2020-03-19 23:46:18.757  WARN [servicio-zuul-server,,,] 15752 --- [RMI TCP Connection(94)-127.0.0.1] c.n.d.s.t.d.RetryableEurekaHttpClient    : Request execution failed with message: java.net.ConnectException: Connection refused: connect
+2020-03-19 23:46:18.758 ERROR [servicio-zuul-server,,,] 15752 --- [RMI TCP Connection(94)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_SERVICIO-ZUUL-SERVER/DESKTOP-9CSVTN3.mshome.net:servicio-zuul-server:8090 - de-registration failedCannot execute request on any known server
+
+com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112) ~[eureka-client-1.9.8.jar:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71) ~[eureka-client-1.9.8.jar:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$2.execute(EurekaHttpClientDecorator.java:74) ~[eureka-client-1.9.8.jar:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77) ~[eureka-client-1.9.8.jar:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71) ~[eureka-client-1.9.8.jar:1.9.8]
+	at com.netflix.discovery.DiscoveryClient.unregister(DiscoveryClient.java:923) [eureka-client-1.9.8.jar:1.9.8]
+	at com.netflix.discovery.DiscoveryClient.shutdown(DiscoveryClient.java:901) [eureka-client-1.9.8.jar:1.9.8]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_241]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) ~[na:1.8.0_241]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[na:1.8.0_241]
+	at java.lang.reflect.Method.invoke(Unknown Source) ~[na:1.8.0_241]
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleElement.invoke(InitDestroyAnnotationBeanPostProcessor.java:363) [spring-beans-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMetadata.invokeDestroyMethods(InitDestroyAnnotationBeanPostProcessor.java:321) [spring-beans-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeDestruction(InitDestroyAnnotationBeanPostProcessor.java:156) [spring-beans-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:240) [spring-beans-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.run(DisposableBeanAdapter.java:233) [spring-beans-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.cloud.context.scope.GenericScope$BeanLifecycleWrapper.destroy(GenericScope.java:403) [spring-cloud-context-2.1.1.RELEASE.jar:2.1.1.RELEASE]
+	at org.springframework.cloud.context.scope.GenericScope.destroy(GenericScope.java:142) [spring-cloud-context-2.1.1.RELEASE.jar:2.1.1.RELEASE]
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:256) [spring-beans-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroyBean(DefaultSingletonBeanRegistry.java:571) [spring-beans-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingleton(DefaultSingletonBeanRegistry.java:543) [spring-beans-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingleton(DefaultListableBeanFactory.java:1034) [spring-beans-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingletons(DefaultSingletonBeanRegistry.java:504) [spring-beans-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingletons(DefaultListableBeanFactory.java:1027) [spring-beans-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.destroyBeans(AbstractApplicationContext.java:1057) [spring-context-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1026) [spring-context-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:975) [spring-context-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.boot.admin.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin.shutdown(SpringApplicationAdminMXBeanRegistrar.java:164) [spring-boot-2.1.5.RELEASE.jar:2.1.5.RELEASE]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_241]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) ~[na:1.8.0_241]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[na:1.8.0_241]
+	at java.lang.reflect.Method.invoke(Unknown Source) ~[na:1.8.0_241]
+	at sun.reflect.misc.Trampoline.invoke(Unknown Source) [na:1.8.0_241]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_241]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) ~[na:1.8.0_241]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[na:1.8.0_241]
+	at java.lang.reflect.Method.invoke(Unknown Source) ~[na:1.8.0_241]
+	at sun.reflect.misc.MethodUtil.invoke(Unknown Source) [na:1.8.0_241]
+	at com.sun.jmx.mbeanserver.ConvertingMethod.invokeWithOpenReturn(Unknown Source) [na:1.8.0_241]
+	at com.sun.jmx.mbeanserver.ConvertingMethod.invokeWithOpenReturn(Unknown Source) [na:1.8.0_241]
+	at com.sun.jmx.mbeanserver.MXBeanIntrospector.invokeM2(Unknown Source) [na:1.8.0_241]
+	at com.sun.jmx.mbeanserver.MXBeanIntrospector.invokeM2(Unknown Source) [na:1.8.0_241]
+	at com.sun.jmx.mbeanserver.MBeanIntrospector.invokeM(Unknown Source) [na:1.8.0_241]
+	at com.sun.jmx.mbeanserver.PerInterface.invoke(Unknown Source) [na:1.8.0_241]
+	at com.sun.jmx.mbeanserver.MBeanSupport.invoke(Unknown Source) [na:1.8.0_241]
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.invoke(Unknown Source) [na:1.8.0_241]
+	at com.sun.jmx.mbeanserver.JmxMBeanServer.invoke(Unknown Source) [na:1.8.0_241]
+	at javax.management.remote.rmi.RMIConnectionImpl.doOperation(Unknown Source) [na:1.8.0_241]
+	at javax.management.remote.rmi.RMIConnectionImpl.access$300(Unknown Source) [na:1.8.0_241]
+	at javax.management.remote.rmi.RMIConnectionImpl$PrivilegedOperation.run(Unknown Source) [na:1.8.0_241]
+	at javax.management.remote.rmi.RMIConnectionImpl.doPrivilegedOperation(Unknown Source) [na:1.8.0_241]
+	at javax.management.remote.rmi.RMIConnectionImpl.invoke(Unknown Source) [na:1.8.0_241]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_241]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) ~[na:1.8.0_241]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[na:1.8.0_241]
+	at java.lang.reflect.Method.invoke(Unknown Source) ~[na:1.8.0_241]
+	at sun.rmi.server.UnicastServerRef.dispatch(Unknown Source) [na:1.8.0_241]
+	at sun.rmi.transport.Transport$1.run(Unknown Source) [na:1.8.0_241]
+	at sun.rmi.transport.Transport$1.run(Unknown Source) [na:1.8.0_241]
+	at java.security.AccessController.doPrivileged(Native Method) [na:1.8.0_241]
+	at sun.rmi.transport.Transport.serviceCall(Unknown Source) [na:1.8.0_241]
+	at sun.rmi.transport.tcp.TCPTransport.handleMessages(Unknown Source) [na:1.8.0_241]
+	at sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run0(Unknown Source) [na:1.8.0_241]
+	at sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.lambda$run$0(Unknown Source) [na:1.8.0_241]
+	at java.security.AccessController.doPrivileged(Native Method) [na:1.8.0_241]
+	at sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run(Unknown Source) [na:1.8.0_241]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source) ~[na:1.8.0_241]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source) ~[na:1.8.0_241]
+	at java.lang.Thread.run(Unknown Source) ~[na:1.8.0_241]
+
+2020-03-19 23:46:18.765  INFO [servicio-zuul-server,,,] 15752 --- [RMI TCP Connection(94)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2020-03-19 23:46:18.970  INFO [servicio-zuul-server,,,] 15752 --- [RMI TCP Connection(94)-127.0.0.1] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2020-03-19 23:46:18.973  INFO [servicio-zuul-server,,,] 15752 --- [RMI TCP Connection(94)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2020-03-19 23:46:18.980  WARN [servicio-zuul-server,,,] 15752 --- [RMI TCP Connection(94)-127.0.0.1] o.a.c.loader.WebappClassLoaderBase       : The web application [ROOT] appears to have started a thread named [RxIoScheduler-1 (Evictor)] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.misc.Unsafe.park(Native Method)
+ java.util.concurrent.locks.LockSupport.parkNanos(Unknown Source)
+ java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(Unknown Source)
+ java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(Unknown Source)
+ java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(Unknown Source)
+ java.util.concurrent.ThreadPoolExecutor.getTask(Unknown Source)
+ java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+ java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+ java.lang.Thread.run(Unknown Source)
+2020-03-19 23:46:18.981  WARN [servicio-zuul-server,,,] 15752 --- [RMI TCP Connection(94)-127.0.0.1] o.a.c.loader.WebappClassLoaderBase       : The web application [ROOT] appears to have started a thread named [expiringMap-0] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.misc.Unsafe.park(Native Method)
+ java.util.concurrent.locks.LockSupport.parkNanos(Unknown Source)
+ java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(Unknown Source)
+ java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(Unknown Source)
+ java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(Unknown Source)
+ java.util.concurrent.ThreadPoolExecutor.getTask(Unknown Source)
+ java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+ java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+ java.lang.Thread.run(Unknown Source)
+2020-03-19 23:46:18.981  WARN [servicio-zuul-server,,,] 15752 --- [RMI TCP Connection(94)-127.0.0.1] o.a.c.loader.WebappClassLoaderBase       : The web application [ROOT] appears to have started a thread named [PollingServerListUpdater-0] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.misc.Unsafe.park(Native Method)
+ java.util.concurrent.locks.LockSupport.parkNanos(Unknown Source)
+ java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(Unknown Source)
+ java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(Unknown Source)
+ java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(Unknown Source)
+ java.util.concurrent.ThreadPoolExecutor.getTask(Unknown Source)
+ java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+ java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+ java.lang.Thread.run(Unknown Source)
+2020-03-19 23:46:18.982  WARN [servicio-zuul-server,,,] 15752 --- [RMI TCP Connection(94)-127.0.0.1] o.a.c.loader.WebappClassLoaderBase       : The web application [ROOT] appears to have started a thread named [DataPublisher] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.misc.Unsafe.park(Native Method)
+ java.util.concurrent.locks.LockSupport.parkNanos(Unknown Source)
+ java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(Unknown Source)
+ java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(Unknown Source)
+ java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(Unknown Source)
+ java.util.concurrent.ThreadPoolExecutor.getTask(Unknown Source)
+ java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+ java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+ java.lang.Thread.run(Unknown Source)
+2020-03-19 23:46:18.983  WARN [servicio-zuul-server,,,] 15752 --- [RMI TCP Connection(94)-127.0.0.1] o.a.c.loader.WebappClassLoaderBase       : The web application [ROOT] appears to have started a thread named [RxComputationScheduler-1] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.misc.Unsafe.park(Native Method)
+ java.util.concurrent.locks.LockSupport.park(Unknown Source)
+ java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(Unknown Source)
+ java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(Unknown Source)
+ java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(Unknown Source)
+ java.util.concurrent.ThreadPoolExecutor.getTask(Unknown Source)
+ java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+ java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+ java.lang.Thread.run(Unknown Source)
+2020-03-19 23:46:18.985  WARN [servicio-zuul-server,,,] 15752 --- [RMI TCP Connection(94)-127.0.0.1] o.a.c.loader.WebappClassLoaderBase       : The web application [ROOT] appears to have started a thread named [PollingServerListUpdater-1] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.misc.Unsafe.park(Native Method)
+ java.util.concurrent.locks.LockSupport.park(Unknown Source)
+ java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(Unknown Source)
+ java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(Unknown Source)
+ java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(Unknown Source)
+ java.util.concurrent.ThreadPoolExecutor.getTask(Unknown Source)
+ java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+ java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+ java.lang.Thread.run(Unknown Source)
+2020-03-19 23:46:18.985  WARN [servicio-zuul-server,,,] 15752 --- [RMI TCP Connection(94)-127.0.0.1] o.a.c.loader.WebappClassLoaderBase       : The web application [ROOT] appears to have started a thread named [RxComputationScheduler-2] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.misc.Unsafe.park(Native Method)
+ java.util.concurrent.locks.LockSupport.park(Unknown Source)
+ java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(Unknown Source)
+ java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(Unknown Source)
+ java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(Unknown Source)
+ java.util.concurrent.ThreadPoolExecutor.getTask(Unknown Source)
+ java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+ java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+ java.lang.Thread.run(Unknown Source)
+2020-03-19 23:46:18.989  INFO [servicio-zuul-server,,,] 15752 --- [Thread-20] c.n.l.PollingServerListUpdater           : Shutting down the Executor Pool for PollingServerListUpdater
